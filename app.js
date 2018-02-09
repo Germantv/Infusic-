@@ -14,6 +14,8 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var placeHold = require('./routes/placeHolder');
+var browse = require('./routes/browse');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,6 +42,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get("/placeHolder", placeHold.viewProject);
+app.get("/browse", browse.viewProject);
 // Example route
 // app.get('/users', user.list);
 
