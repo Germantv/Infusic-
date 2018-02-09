@@ -1,0 +1,119 @@
+body {margin:0;}
+
+#top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#bottom {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.bottom {
+    background-color: #4CAF50;
+}
+
+#topRight {
+    float: right;
+    background-color: #4CAF50;
+}
+
+#home {
+    float: center;
+    background-color: #4CAF50;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+
+.button2 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+
+.button3 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+
