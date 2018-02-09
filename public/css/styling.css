@@ -2,6 +2,8 @@ body {margin:0;}
 
 #top {
     list-style-type: none;
+    display: inline-block;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -23,7 +25,8 @@ body {margin:0;}
 }
 
 li {
-    float: left;
+    display: inline-block;
+    text-align: center; 
 }
 
 li a {
@@ -49,12 +52,9 @@ li a:hover:not(.active) {
 
 #home {
     float: center;
+    align-self: center;
+    text-align: center;
     background-color: #DCDCDC;
-}
-
-#home:hover {
-    background-color: white;
-    color: black;
 }
 
 #homeText {
