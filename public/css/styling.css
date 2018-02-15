@@ -1,5 +1,68 @@
-body {margin:0;}
 
+body {
+    overflow: scroll;
+    width: 1500px;
+}
+
+.button {
+    display: block;
+    float: left;
+    width: 250px;
+    border-radius: 5%;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+h3 {
+    margin-top: 30px;
+    padding-left:16px;
+    padding-bottom: 15px;
+}
+
+.album {
+    display: block;
+    float: left;
+    padding-right:70px;
+}
+
+#spotifypic {
+    height:40px;
+    width:40px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+#applepic {
+    height:30px;
+    width:24px;
+    margin-left: -12px;
+    margin-top: -22px;
+}
+
+#tidalpic {
+    height:50px;
+    width:50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+#title {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#artist {
+    margin-top:-8px;
+}
+
+/*
 #top {
     list-style-type: none;
     display: inline-block;
@@ -12,7 +75,6 @@ body {margin:0;}
     top: 0;
     width: 100%;
 }
-
 #bottom {
     list-style-type: none;
     display: inline-block;
@@ -25,12 +87,10 @@ body {margin:0;}
     bottom: 0;
     width: 100%;
 }
-
 li {
     display: inline-block;
     text-align: center; 
 }
-
 li a {
     display: block;
     color: white;
@@ -38,152 +98,25 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover:not(.active) {
     background-color: #111;
 }
-
 .bottom {
     background-color: #4CAF50;
 }
-
 #topRight {
     float: right;
     background-color: #DCDCDC;
 }
-
 #home {
     float: center;
     align-self: center;
     text-align: center;
     background-color: #DCDCDC;
 }
-
 #homeText {
     color: #000000;
 }
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 70px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-
-button:focus {
-    background:green;
-}
-
-.button1 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-
-.button1:hover {
-    background-color: white;
-    color: black;
-}
-
-.button2 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-
-.button2:hover {
-    background-color: white;
-    color: black;
-}
-
-.button3 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-
-.button3:hover {
-    background-color: white;
-    color: black;
-}
-
-
-
-.icon-bar {
-    width: 100%;
-    background-color: #3D3D3D;
-    overflow: auto;
-    display: inline-block;
-    bottom: 0;
-    position: fixed;
-}
-
-.icon-bar a {
-    float:  left;
-    width: 20%;
-    text-align: center;
-    padding: 8px 0;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
-
-
-}
-
-.icon-bar a:hover {
-    background-color: #000;
-    display: inline-block;
-
-}
-
-.active {
-    background-color: #4CAF50 !important;
-}
-
-.fa {
-    float: center;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: white;
-    width: 100%;
-    padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-}
-
 #roundButt {
     display: block;
     height: 70px;
@@ -192,4 +125,83 @@ button:focus {
     border: none;
     background-color: #CACACA;
 }
+.button1 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+.button2 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+.button3 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+ Add a card effect for articles
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+*/
 
+
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    display: block;
+
+}
+
+.navbar a:hover {
+    background-color: #f1f1f1;
+    color: black;
+
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.fa {
+    float: center;
+}
+
+
+.fakeimg {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}

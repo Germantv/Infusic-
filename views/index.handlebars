@@ -5,77 +5,80 @@
 	<title>Infusic</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<script src="/js/bootstrap.js"></script>
-
 		<link href="/css/bootstrap.css" rel="stylesheet">
 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
 		<link href="/css/styling.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-	<ul id="top">
-	  <li id="home"><h4 id="homeText">Infusic</h4></li>
-	  <li id="topRight"><a class="top" href="#...">...</a></li>
-	</ul>
+<!--bottom navigation bar-->
 
-	<div class="icon-bar">
-	  <a class="active" href="index"><i class="fa fa-home"></i></a> 
-	  <a href="placeHolder"><i class="fa fa-search"></i></a> 
-	  <a href="browse"><i class="fa fa-music"></i></a> 
+<div class="navbar">
+	  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+	  <a href="placeHolder"><i class="fa fa-search"></i></a>
+	  <a href="browse"><i class="fa fa-users"></i></a>
+	  <a href="browse"><i class="fa fa-user"></i></a>
 	</div>
 
-	<div style="padding:20px;margin-top:30px;background-color:#f3f3f3;height:1500px;">
+<!--app filters-->
+	<div class="filter">
+	<div class="container">
+	<div class="filterchild">
+    	<button class="button button1" id="spotify">
+    		  <img id="spotifypic" src="http://www.volta-volta.com/wp-content/uploads/2016/03/spotify-logo_318-27558.jpg"/></button>
+      <button class="button button2" id="apple">
+        	<img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
+      <button class="button button3" id="tidal">
+        	<img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
+    </div>
+</div>	
+</div>
 
-	<div class="row">
-	  <div class="column">
-	    <h2><button class="button button1">Spotify</button></h2>
-	  </div>
-	  <div class="column">
-	    <h2><button class="button button2">Apple Music</button></h2>
-	  </div>
-	  <div class="column">
-	    <h2><button class="button button3">Pandora</button></h2>
-	  </div>
-	</div>
+<!--playlists-->
+<div class="container">
+	<div class="child" id="playlist">
+      	<h3>Playlists</h3>
+      	<div class="container">
+      		<div class="album" id="ooz">
+      			<img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg"
+            width=250px height=250px a href="songspage" class="thumbnail">
+      			<p id="title">The OOZ</p>
+      			<p id="artist">King Krule</p>
+      		</div>
+      		<div class="album" id="saturation">
+      			<img src="http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3" width=250px height=250px>
+      			<p id="title">Saturation III</p>
+      			<p id="artist">BROCKHAMPTON</p>
+      		</div>
+      		<div class="album" id="trilogy">
+      			<img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6979/6979156_sa.jpg" width=250px height=250px>
+      			<p id="title">Trilogy</p>
+      			<p id="artist">The Weeknd</p>
+      		</div>
 
 
-
-      <h3>Playlists</h3>
-      <div class="card">
-
-      	<div class="fakeimg">
-      		<a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p>
-      	</div>
+ <!--     	
+      	<div class="fakeimg"><a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p></div>
       	<p># of songs, 120 min</p>
       	<br>
-
-      	<div class="fakeimg">
-      		<a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p>
-      	</div>
+      	<div class="fakeimg"><a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p></div>
+      	<p># of songs, 120 min</p>
+      	<br><div class="fakeimg"><a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p></div>
+      	<p># of songs, 120 min</p>
+      	<br><div class="fakeimg"><a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p></div>
       	<p># of songs, 120 min</p>
       	<br>
-
-      	<div class="fakeimg">
-      		<a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p>
-      	</div>
+      	<div class="fakeimg"><a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p></div>
       	<p># of songs, 120 min</p>
       	<br>
-
-      	<div class="fakeimg">
-      		<a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p>
-      	</div>
-      	<p># of songs, 120 min</p>
-      	<br>
-
-      	<div class="fakeimg">
-      		<a href="placeHolder"><button id="roundButt"></button></a><p><b>Playlist Name #1</b></p>
-      	</div>
-      	<p># of songs, 120 min</p>
-      	<br>
-      	
       </div>
-</body>
+  -->
 
+</div>
+</div>
+
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+</body>
 </html>

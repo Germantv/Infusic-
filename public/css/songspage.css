@@ -1,0 +1,17 @@
+
+#pic {
+	margin-top: 30px;   
+	margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+p {
+    font-size: 15px;
+    position: center;
+}
+
+p:active {
+    background-color: blue;
+}
+
