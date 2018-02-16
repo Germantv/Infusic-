@@ -1,7 +1,9 @@
 
 body {
     overflow: scroll;
-    width: 1500px;
+    padding-bottom: 70px;
+    font-size: 14px;
+    min-width: 720px;
 }
 
 .button {
@@ -161,12 +163,12 @@ li a:hover:not(.active) {
      padding: 20px;
      margin-top: 20px;
 }
-*/
 
+*/
 
 .navbar {
     width: 100%;
-    background-color: #000000;
+    background-color: #303030;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -191,7 +193,7 @@ li a:hover:not(.active) {
 }
 
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: #7EBBFB;
     color: white;
 }
 
