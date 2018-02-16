@@ -93,10 +93,11 @@
 	width: 100%;
 	border-radius: 2px;
 }
+/*The .progress is for volume and the myBar is for sound */
 .progress{
 	background-color: #a0a0a0;
 	height: 4px;
-	width: 0.5px;
+	width: 40px;
 	border-radius: 2px;
 }
 #myBar{

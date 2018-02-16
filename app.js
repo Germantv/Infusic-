@@ -19,6 +19,9 @@ var browse = require('./routes/browse');
 var songspage = require('./routes/songspage');
 var login = require('./routes/login');
 var partyMode = require('./routes/partyMode');
+var search = require('./routes/search');
+var requestQueue = require('./routes/requestQueue');
+var profile = require('./routes/profile');
 
 // Example route
 // var user = require('./routes/user');
@@ -51,6 +54,9 @@ app.get("/browse", browse.viewProject);
 app.get('/songspage', songspage.viewProject);
 app.get('/login', login.viewProject);
 app.get("/partyMode", partyMode.viewProject);
+app.get('/search', search.viewProject);
+app.get("/requestQueue", requestQueue.viewProject);
+app.get("/profile", profile.viewProject);
 
 // Example route
 // app.get('/users', user.list);
