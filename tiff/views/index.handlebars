@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Infusic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+		<link href="/css/styling.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!--bottom navigation bar-->
+
+<div class="navbar">
+	  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+	  <a href="placeHolder"><i class="fa fa-search"></i></a>
+	  <a href="browse"><i class="fa fa-users"></i></a>
+	  <a href="browse"><i class="fa fa-user"></i></a>
+	</div>
+
+<!--app filters-->
+
+	<div class="filter">
+	<div class="container">
+	<div class="filterchild">
+    	<button class="button" id="spotify" onclick="spotifyToggle()">
+    		  <img id="spotifypic" src="http://www.volta-volta.com/wp-content/uploads/2016/03/spotify-logo_318-27558.jpg"/></button>
+
+    <!--toggle function-->      
+      <script>
+        function spotifyToggle() {
+          var a = document.getElementById("ooz");
+          var b = document.getElementById("trilogy");
+          var c = document.getElementById("currents");
+          var d = document.getElementById("rodeo");
+          if (a.style.display === "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          if (b.style.display === "none") {
+            b.style.display = "block";
+          } else {
+            b.style.display = "none";
+          }
+          if (c.style.display === "none") {
+            c.style.display = "block";
+          } else {
+            c.style.display = "none";
+          }
+          if (d.style.display === "none") {
+            d.style.display = "block";
+          } else {
+            d.style.display = "none";
+          }
+        }
+      </script>   
+
+      <button class="button" id="apple" onclick="appleToggle()">
+        	<img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
+
+        <script>
+        function appleToggle() {
+          var a = document.getElementById("saturation");
+          var b = document.getElementById("trilogy");
+          var c = document.getElementById("steve");
+          var d = document.getElementById("rodeo");
+          if (a.style.display === "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          if (b.style.display === "none") {
+            b.style.display = "block";
+          } else {
+            b.style.display = "none";
+          }
+          if (c.style.display === "none") {
+            c.style.display = "block";
+          } else {
+            c.style.display = "none";
+          }
+          if (d.style.display === "none") {
+            d.style.display = "block";
+          } else {
+            d.style.display = "none";
+          }
+        }
+      </script>   
+
+      <button class="button" id="tidal" onclick="tidalToggle()">
+        	<img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
+
+        <script>
+        function tidalToggle() {
+          var a = document.getElementById("saturation");
+          var b = document.getElementById("ooz");
+          var c = document.getElementById("steve");
+          var d = document.getElementById("currents");
+          if (a.style.display === "none") {
+            a.style.display = "block";
+          } else {
+            a.style.display = "none";
+          }
+          if (b.style.display === "none") {
+            b.style.display = "block";
+          } else {
+            b.style.display = "none";
+          }
+          if (c.style.display === "none") {
+            c.style.display = "block";
+          } else {
+            c.style.display = "none";
+          }
+          if (d.style.display === "none") {
+            d.style.display = "block";
+          } else {
+            d.style.display = "none";
+          }
+        }
+      </script>   
+
+    </div>
+</div>	
+</div>
+
+<!--playlists-->
+
+<div class="container">
+	<div class="child" id="playlist">
+      	<h3>Playlists</h3>
+      	<div class="container">
+
+          <!--The OOZ-->
+      		<div class="album" id="ooz">
+      			<a href="ooz">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg"
+            width=250px height=250px a href="ooz">
+      			<p id="title">The OOZ</p>
+      			<p id="artist">King Krule</p>
+            </a>
+      		</div>
+
+          <!--Saturation-->
+      		<div class="album" id="saturation">
+            <a href="saturation">
+      			<img src="http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3" 
+            width=250px height=250px a href="saturation">
+      			<p id="title">Saturation III</p>
+      			<p id="artist">BROCKHAMPTON</p>
+            </a>
+      		</div>
+
+          <!--Trilogy-->
+      		<div class="album" id="trilogy">
+            <a href="trilogy">
+      			<img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6979/6979156_sa.jpg" 
+            width=250px height=250px a href="trilogy">
+      			<p id="title">Trilogy</p>
+      			<p id="artist">The Weeknd</p>
+            </a>
+      		</div>
+
+           <!--Steve Lacy-->
+          <div class="album" id="steve">
+            <a href="steve">
+            <img src="https://media.pitchfork.com/photos/5929c1edeb335119a49ed62f/1:1/w_320/34ea7d70.jpg" 
+            width=250px height=250px a href="steve">
+            <p id="title">Steve Lacy's Demo</p>
+            <p id="artist">Steve Lacy</p>
+            </a>
+          </div>
+
+           <!--Currents-->
+          <div class="album" id="currents">
+            <a href="currents">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/A1LVEJikmZL._SL1500_.jpg" 
+            width=250px height=250px a href="currents">
+            <p id="title">Currents</p>
+            <p id="artist">Tame Impala</p>
+            </a>
+          </div>
+
+          <!--Rodeo-->
+          <div class="album" id="rodeo">
+            <a href="rodeo">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/f2/7a/e6/f27ae67f-f3dc-a4c7-a6df-92e9b8b8587d/886445423822.jpg/1200x630bb.jpg" 
+            width=250px height=250px a href="rodeo">
+            <p id="title">Rodeo</p>
+            <p id="artist">Travis Scott</p>
+            </a>
+          </div>
+
+</div>
+</div>
+
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+</body>
+</html>

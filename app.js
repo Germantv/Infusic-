@@ -22,6 +22,14 @@ var partyMode = require('./routes/partyMode');
 var search = require('./routes/search');
 var requestQueue = require('./routes/requestQueue');
 var profile = require('./routes/profile');
+var ooz = require('./routes/ooz');
+var saturation = require('./routes/saturation');
+var trilogy = require('./routes/trilogy');
+var steve = require('./routes/steve');
+var currents = require('./routes/currents');
+var rodeo = require('./routes/rodeo');
+
+var login = require('./routes/login');
 
 // Example route
 // var user = require('./routes/user');
@@ -57,6 +65,14 @@ app.get("/partyMode", partyMode.viewProject);
 app.get('/search', search.viewProject);
 app.get("/requestQueue", requestQueue.viewProject);
 app.get("/profile", profile.viewProject);
+app.get('/ooz', ooz.viewProject);
+app.get('/saturation', saturation.viewProject);
+app.get('/trilogy', trilogy.viewProject);
+app.get('/steve', steve.viewProject);
+app.get('/currents', currents.viewProject);
+app.get('/rodeo', rodeo.viewProject);
+app.get('/login', login.viewProject);
+app.get('/index', index.view);
 
 // Example route
 // app.get('/users', user.list);

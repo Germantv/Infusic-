@@ -1,0 +1,94 @@
+.button {
+    display: block;
+    float: left;
+    width: 250px;
+    border-radius: 5%;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.button a:active {
+    background-color: #4CAF50;
+    color: black;
+}
+
+h3 {
+    margin-top: 30px;
+    padding-left:16px;
+    padding-bottom: 15px;
+}
+
+.album {
+    display: block;
+    float: left;
+    padding-right:70px;
+}
+
+#spotifypic {
+    height:40px;
+    width:40px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+#applepic {
+    height:30px;
+    width:24px;
+    margin-left: -12px;
+    margin-top: -22px;
+}
+
+#tidalpic {
+    height:50px;
+    width:50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+#title {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#artist {
+    margin-top:-8px;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+    display: block;
+
+}
+
+.navbar a:hover {
+    background-color: #f1f1f1;
+    color: black;
+
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
