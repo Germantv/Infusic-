@@ -14,11 +14,40 @@
 	</head>
 
 	<body>
-		<ul id="top">
+		<!--
+		<div id="partyTop">
 	  		<li id="home"><h4 id="homeText">Party Mode</h4></li>
 	  		<li id="topRight"><a class="top" href="#...">...</a></li>
-		</ul>
+		</div>
+		-->
+		<!-- div used to add padding between top of page and profile pic -->
+		<div id="whitespace"></div>
+		<!-- div used to add padding between top of page and profile pic -->
+		<div id="whitespace"></div>
+		<!-- div used to add padding between top of page and profile pic -->
+		<div id="whitespace"></div>
+
+		<!-- buttons for send request, request queue-->
+		<div class="buttons">
+			<center>
+			<div class="container">
+				<div class="buttonChild">
+					<a button class="partyButton button1" id="sendRequest" href="sendRequest">Send Request</button></a>
+					<a button class="partyButton button2" id="requestQueue" href="requestQueue">Request Queue</button></a>
+				</div>
+			</div>
+			</center>
+		</div>
 
 	</body>
 
+	<div class="navbar">
+	  <a href="/"><i class="fa fa-home"></i></a> 
+	  <a href="browse"><i class="fa fa-search"></i></a>
+	  <a class="active" href="partyMode"><i class="fa fa-users"></i></a>
+	  <a href="profile"><i class="fa fa-user"></i></a>
+	</div>
+
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
 </html>
