@@ -1,7 +1,6 @@
 
 body {
     overflow: scroll;
-    width: 1500px;
 }
 
 .button {
@@ -20,17 +19,82 @@ body {
     cursor: pointer;
 }
 
+.buttonProf {
+    display: inline-block;
+    width: 250px;
+    border-radius: 5%;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.partyButton {
+    display: block;
+    width: 50%;
+    border-radius: 5%;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vw;
+    margin: 32px 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.logoutButton {
+    display: block;
+    width: 20%;
+    height: 10%;
+    border-radius: 5%;
+    background-color: #000000; 
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vw;
+    margin: 32px 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.partyButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 h3 {
     margin-top: 30px;
     padding-left:16px;
     padding-bottom: 15px;
 }
 
+
 .album {
     display: block;
     float: left;
     padding-right:70px;
 }
+
+/*
+#partyTop {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DCDCDC;
+    top: 0;
+    width: 100%;
+}
+*/
 
 #spotifypic {
     height:40px;
@@ -44,6 +108,14 @@ h3 {
     width:24px;
     margin-left: -12px;
     margin-top: -22px;
+}
+
+#applepic2 {
+    height:30px;
+    width:24px;
+    margin-left: -12px;
+    margin-top: -22px;
+    margin-bottom: 15px;
 }
 
 #tidalpic {
@@ -191,7 +263,7 @@ li a:hover:not(.active) {
 }
 
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: #7EBBFB;
     color: white;
 }
 
@@ -204,4 +276,13 @@ li a:hover:not(.active) {
     background-color: white;
     width: 100%;
     padding: 20px;
+}
+
+.fakeProf {
+    border-radius: 50%;
+    zoom: 25%;
+}
+
+#whitespace {
+    padding:1%;
 }
