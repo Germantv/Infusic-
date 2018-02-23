@@ -31,35 +31,7 @@
         <button class="button button1" id="spotify" onclick="spotifyToggle()">
             <img id="spotifypic" src="http://www.volta-volta.com/wp-content/uploads/2016/03/spotify-logo_318-27558.jpg"/></button>
 
-        <button class="button button2" id="apple" onclick="appleToggle()">
-          	<img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
-
-        <button class="button button3" id="tidal" onclick="tidalToggle()">
-          	<img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
-      </div>
-    </div>	
-  </div>
-
-<!--playlists-->
-<div class="container">
-  <div class="child" id="playlist">
-    <h3>Playlists</h3>
-        <div class="container">
-
-{{#each playlists}}
-    <div class="playlist" id="{{id}}">
-    <a href="{{a}}">
-    <img src="{{imgURL}}" width=250px height=250px>
-    <h4>{{title}}</h4>
-    <p>{{artist}}</p>
-    </a>
-    </div>
-{{/each}}    
-</div>
-</div>
-</div>
-
-
+            <!--toggle function-->      
          <script>
         function spotifyToggle() {
           var a = document.getElementById("ooz");
@@ -89,14 +61,10 @@
         }
       </script>  
 
-<<<<<<< HEAD
-  <script>
-=======
         <button class="button button2" id="apple" onclick="appleToggle()">
             <img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
 
             <script>
->>>>>>> b2a5d3d5fe30d430806dd3671fe643dd131f3843
         function appleToggle() {
           var a = document.getElementById("saturation");
           var b = document.getElementById("trilogy");
@@ -125,12 +93,9 @@
         }
       </script>
 
-<<<<<<< HEAD
-=======
         <button class="button button3" id="tidal" onclick="tidalToggle()">
             <img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
 
->>>>>>> b2a5d3d5fe30d430806dd3671fe643dd131f3843
 
       <script>
         function tidalToggle() {
@@ -161,14 +126,6 @@
         }
       </script>
 
-<<<<<<< HEAD
-
-
-
-
-<!--
-    
-=======
       </div>
     </div>  
   </div>
@@ -179,7 +136,6 @@
         <h3>Playlists</h3>
           <div class="container">
               <!--The OOZ-->
->>>>>>> b2a5d3d5fe30d430806dd3671fe643dd131f3843
             <div class="album" id="ooz">
               <a href="ooz">
               <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg"
@@ -189,7 +145,7 @@
               </a>
             </div>
 
-         
+            <!--Saturation-->
             <div class="album" id="saturation">
               <a href="saturation">
               <img src="http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3" 
@@ -199,7 +155,7 @@
               </a>
             </div>
 
-          
+            <!--Trilogy-->
             <div class="album" id="trilogy">
               <a href="trilogy">
               <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6979/6979156_sa.jpg" 
@@ -209,7 +165,7 @@
               </a>
             </div>
 
-       
+             <!--Steve Lacy-->
             <div class="album" id="steve">
               <a href="steve">
               <img src="https://media.pitchfork.com/photos/5929c1edeb335119a49ed62f/1:1/w_320/34ea7d70.jpg" 
@@ -219,7 +175,7 @@
               </a>
             </div>
 
-       
+             <!--Currents-->
             <div class="album" id="currents">
               <a href="currents">
               <img src="https://images-na.ssl-images-amazon.com/images/I/A1LVEJikmZL._SL1500_.jpg" 
@@ -229,7 +185,7 @@
               </a>
             </div>
 
-          
+            <!--Rodeo-->
             <div class="album" id="rodeo">
               <a href="rodeo">
               <img src="https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/f2/7a/e6/f27ae67f-f3dc-a4c7-a6df-92e9b8b8587d/886445423822.jpg/1200x630bb.jpg" 
@@ -239,9 +195,6 @@
               </a>
           </div>
     </div>
--->
-
-
 
   <!-- NowPlayingBar -->
   <div id="nowPlayingBarContainer">
