@@ -2,34 +2,34 @@
 <html>
 
 <head>
-	<title>Infusic</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=800">
+  <title>Infusic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=800">
 
-		<link href="/css/bootstrap.css" rel="stylesheet">
-		<link href="/css/bootstrap-theme.css" rel="stylesheet">
-		<link href="/css/styling.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/styling.css" rel="stylesheet">
     <link href="/css/nowPlayingBarStyle.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!--bottom navigation bar-->
 <body>
   <div class="navbar">
-  	  <a class="active" href="/"><i class="fa fa-home"></i></a> 
-  	  <a href="search"><i class="fa fa-search"></i></a>
-  	  <a href="partyMode"><i class="fa fa-users"></i></a>
-  	  <a href="profile"><i class="fa fa-user"></i></a>
+      <a class="active" href="/"><i class="fa fa-home"></i></a> 
+      <a href="search"><i class="fa fa-search"></i></a>
+      <a href="partyMode"><i class="fa fa-users"></i></a>
+      <a href="profile"><i class="fa fa-user"></i></a>
   </div>
  
 
   <!--app filters-->
   <div class="filter">
-  	<div class="container">
+    <div class="container">
       <div class="filterchild">
         <h3 id="filter">Infusic Filters:</h3>
-      	<button class="button button1" id="spotify" onclick="spotifyToggle()">
-      		  <img id="spotifypic" src="http://www.volta-volta.com/wp-content/uploads/2016/03/spotify-logo_318-27558.jpg"/></button>
+        <button class="button button1" id="spotify" onclick="spotifyToggle()">
+            <img id="spotifypic" src="http://www.volta-volta.com/wp-content/uploads/2016/03/spotify-logo_318-27558.jpg"/></button>
 
             <!--toggle function-->      
          <script>
@@ -62,7 +62,7 @@
       </script>  
 
         <button class="button button2" id="apple" onclick="appleToggle()">
-          	<img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
+            <img id="applepic" src="http://moziru.com/images/apple-inc-clipart-apple-symbol-6.png"></button>
 
             <script>
         function appleToggle() {
@@ -94,7 +94,7 @@
       </script>
 
         <button class="button button3" id="tidal" onclick="tidalToggle()">
-          	<img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
+            <img id="tidalpic" src="https://assets.materialup.com/uploads/f70199e4-111f-4b0e-8643-62f48a767513/teaser.png"></button>
 
 
       <script>
@@ -127,15 +127,15 @@
       </script>
 
       </div>
-    </div>	
+    </div>  
   </div>
 
   <!--playlists-->
   <div class="container">
     <div class="child" id="playlist">
         <h3>Playlists</h3>
-        	<div class="container">
-          		<!--The OOZ-->
+          <div class="container">
+              <!--The OOZ-->
             <div class="album" id="ooz">
               <a href="ooz">
               <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg"
@@ -223,19 +223,12 @@
 
 
       <audio id="myAudio"> 
-        <source src="/songs/bleach.mp3" type="audio/mpeg">
+        <source src="/songs/bleach7.mp3" type="audio/mpeg">
       </audio>
 
       <div id="nowPlayingCenter">
         <div class="content playerControls">
           <div class="buttons">
-            <button class="controlButton shuffle" title="Shuffle button">
-              <img src="/icons/shuffle.png">
-            </button>
-
-            <button class="controlButton rewind" title="Rewind button">
-              <img src="/icons/previous.png">
-            </button>
 
             <button onclick="playAudio();moveBar();" class="controlButton play" title="Play button">
               <img src="/icons/play.png">
@@ -245,12 +238,8 @@
               <img src="/icons/pause.png">
             </button>
 
-            <button class="controlButton forward" title="Forward button" alt="Forward Button">
+            <button onclick="goNext()" class="controlButton forward" title="Forward button" alt="Forward Button">
               <img src="/icons/next.png">
-            </button>
-
-            <button class="controlButton replay" title="Replay button" alt="Replay Button">
-              <img src="/icons/repeat.png">
             </button>
 
           </div>
@@ -262,23 +251,8 @@
                   <div id="myBar"></div>
                 </div>
             </div>
-            <span class="progressTime remaining">0.00</span>
+            <span class="progressTime remaining">4.02</span>
           </div> 
-        </div>
-      </div>
-
-      <div id="nowPlayingRight">
-        <div class="volumeBar">
-          <button class="controlButton volume" title="Volume button">
-            <img src="/icons/volume.png" alt="Volume">
-          </button>
-
-          <div class="ProgressBar">
-              <div class="progressBarBg">
-                <div class="progress"></div>
-              </div>
-          </div>
-
         </div>
       </div>
 
@@ -288,25 +262,13 @@
   </div>
 
   <script>
+    var playlist = ['/songs/chance1.mp3', '/songs/jayz2.mp3', '/songs/kdot3.mp3', '/songs/panther4.mp3', '/songs/rodeo5.mp3', '/songs/tyler5.mp3', '/songs/ye6.mp3', '/songs/bleach7.mp3'];
 
-
-    var audio = new Audio(),
-    i = 0;
-    var playlist = new Array('../public/songs/chance.mp3', '../public/songs/jayz.mp3', '../public/songs/kdot.mp3', '../public/songs/panther.mp3', '../public/songs/rodeo.mp3', '../public/songs/tyler.mp3', '../public/songs/ye.mp3', '../public/songs/bleach.mp3');
-
-    audio.addEventListener('ended', function () {
-        i = ++i < playlist.length ? i : 0;
-        console.log(i)
-        audio.src = playlist[i];
-        audio.play();
-    }, true);
-    audio.volume = 0.3;
-    audio.loop = false;
-    audio.src = playlist[0];
-    audio.play();
 
     var x = document.getElementById("myAudio");
     var n;
+    var i = 0;
+
     function playAudio() {
       x.play();
       n = 1;
@@ -314,6 +276,21 @@
     function pauseAudio() {
       x.pause();
       n = 2;
+    }
+
+   function goNext() {
+      i++;
+      if(i < playlist.length){
+        console.log(playlist[i]);
+        x.src = playlist[i];
+        x.play();
+      }
+      else {
+        i = 0;
+        ++i;
+        x.src = playlist[i];
+        x.play();
+      }
     }
 
     function moveBar(){
