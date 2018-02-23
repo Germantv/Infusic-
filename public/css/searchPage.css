@@ -7,7 +7,8 @@
 body {
 	overflow: scroll;
     padding-bottom: 70px;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
     min-width: 720px;
     background-image: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg);
 }
