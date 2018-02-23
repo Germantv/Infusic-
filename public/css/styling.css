@@ -19,6 +19,42 @@ body {
     cursor: pointer;
 }
 
+#spotify,
+#tidal {
+    margin: 60px;
+    padding: 18px 57px 30px 53px;
+}
+#apple {
+    margin: 60px;
+    padding: 15px 60px 33px 57px;
+}
+#spotify:hover,
+#apple:hover,
+#tidal:hover {
+    background-color: #7EBBFB; 
+}
+#spotifypic2 {
+    height:40px;
+    width:40px;
+    margin-left: -20px;
+    margin-top: -15px;
+}
+#applepic2 {
+    height: 30px;
+    width: 25px;
+    margin-left: -13px;
+    margin-top: -10px;
+    margin-bottom: 22px;
+    margin-right: -15px;
+}
+#tidalpic2 {
+    height: 47px;
+    width: 45px;
+    margin-bottom: 8px;
+    margin-top: -18px;
+    margin-left: -17px;
+}
+
 .buttonProf {
     display: inline-block;
     width: 250px;
@@ -82,10 +118,12 @@ body {
     color: white;
 }
 
-h3 {
-    margin-top: 30px;
-    padding-left:16px;
-    padding-bottom: 15px;
+h1.playHead {
+    margin-top: 17px;
+    padding-left:0px;
+    padding-bottom: 31px;
+    text-align: left;
+    color: powderblue;
 }
 
 
@@ -95,18 +133,6 @@ h3 {
     padding-right:70px;
 }
 
-/*
-#partyTop {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #DCDCDC;
-    top: 0;
-    width: 100%;
-}
-*/
 
 #spotifypic {
     height:40px;
@@ -122,19 +148,12 @@ h3 {
     margin-top: -22px;
 }
 
-#applepic2 {
-    height:30px;
-    width:24px;
-    margin-left: -12px;
-    margin-top: -22px;
-    margin-bottom: 15px;
-}
 
 #tidalpic {
-    height:50px;
-    width:50px;
+    height: 48px;
+    width: 50px;
     margin-left: -25px;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 #title {
@@ -146,106 +165,6 @@ h3 {
     margin-top:-8px;
 }
 
-/*
-#top {
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #DCDCDC;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-#bottom {
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3D3D3D;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-li {
-    display: inline-block;
-    text-align: center; 
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color: #111;
-}
-.bottom {
-    background-color: #4CAF50;
-}
-#topRight {
-    float: right;
-    background-color: #DCDCDC;
-}
-#home {
-    float: center;
-    align-self: center;
-    text-align: center;
-    background-color: #DCDCDC;
-}
-#homeText {
-    color: #000000;
-}
-#roundButt {
-    display: block;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    border: none;
-    background-color: #CACACA;
-}
-.button1 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-.button1:hover {
-    background-color: white;
-    color: black;
-}
-.button2 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-.button2:hover {
-    background-color: white;
-    color: black;
-}
-.button3 {
-    background-color: #DCDCDC; 
-    color: black; 
-    border: 2px solid #DCDCDC;
-    border-radius: 12px;
-}
-.button3:hover {
-    background-color: white;
-    color: black;
-}
- Add a card effect for articles
-.card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-}
-*/
 
 
 .navbar {
