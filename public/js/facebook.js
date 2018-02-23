@@ -18,6 +18,6 @@ function statusChangeCallback(response) {
 
         console.log('REDIRECTING TO MAIN PAGE');
         //redirects to main page
-        window.location = "/";
+        window.location = "/index";
   }
 }
