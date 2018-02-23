@@ -7,7 +7,6 @@
 			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-
 			<script src="/js/bootstrap.js"></script>
 
 			<link href="/css/bootstrap.css" rel="stylesheet">
@@ -23,11 +22,47 @@
 
 		{{#each songNames}}
 			<center>
-			<div class="songName" id="{{id}}">
-				<div id="songBar">
+			<div class="songName">
+				<div class="songBar" id="{{id}}">
 					<b id="s">{{song}}</b>
 					<p id="a">{{artist}}</p>
-<!--					<script>
+					<button class="queueButton" id="approveButton">Approve</button>
+
+					<script type="text/javascript">
+						document.getElementById("approveButton").addEventListener("click",function() {
+							var rmSong = document.getElementById("{{id}}");
+
+							console.log(document.getElementById("{{id}}"));
+							//var rmArtist = document.getElementById("{{id}}");
+
+							rmSong.hide();
+							//rmArtist.style.display="none";
+						});
+					</script>
+
+					<button class="queueButton" id="denyButton">Deny</button>
+
+					<script type="text/javascript">
+						document.getElementById("denyButton").addEventListener("click", function() {
+							var rmSong = document.getElementById("{{id}}");
+
+							console.log(document.getElementById("{{id}}"));
+							//var rmArtist = document.getElementById("a");
+
+							rmSong.style.display="none";
+							//rmArtist.style.display="none";
+						});
+					</script>
+
+				</div>
+			</div>
+			</center>
+		{{/each}}
+
+
+
+<!--	EXTRA CODE FROM PREVIOUS ITERATION
+				<script>
 						console.log("work1");
 						var content = document.getElementById("s");
 						console.log("work2");
@@ -51,12 +86,6 @@
 						console.log("work9");
 					</script> 
 -->
-				</div>
-			</div>
-			</center>
-		{{/each}}
-
-
 <!--script for hiding and displaying items-->
 <!--		<script src="/js/jquery-1.11.0.js">
 			$("#songBar").each(function() {
@@ -117,7 +146,7 @@
 
 	<div class="navbar">
 		<a href="/"><i class="fa fa-home"></i></a> 
-		<a href="browse"><i class="fa fa-search"></i></a>
+		<a href="search"><i class="fa fa-search"></i></a>
 		<a class="active" href="partyMode"><i class="fa fa-users"></i></a>
 		<a href="profile"><i class="fa fa-user"></i></a>
 	</div>

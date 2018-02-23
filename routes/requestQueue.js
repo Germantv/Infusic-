@@ -96,6 +96,13 @@ exports.viewProject = function(req, res){
   });
 };
 
+/*  var getSong = document.getElementById(song);
+  var getArtist = document.getElementById(artist);
+
+  getSong.style.display = "none";
+  getArtist.style.display = "none";
+}
+
 /*function startQueue() {
 	setTimeout(function() {
 		for each (res.songNames.song in res.songNames) {
