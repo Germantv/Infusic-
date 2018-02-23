@@ -34,10 +34,18 @@ body {
     cursor: pointer;
 }
 
+.buttonChild {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+}
+
 .partyButton {
     display: block;
     width: 50%;
-    border-radius: 5%;
     background-color: #000000; 
     color: white;
     padding: 30px;
@@ -46,7 +54,6 @@ body {
     font-size: 4vw;
     margin: 32px 16px;
     cursor: pointer;
-    justify-content: center;
 }
 
 .logoutButton {
