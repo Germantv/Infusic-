@@ -3,17 +3,18 @@
 	<head>
 		<title>Profile</title>
 			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="viewport" content="width=800">
 
 			<script src="/js/bootstrap.js"></script>
-
+			 <link href="/css/nowPlayingBarStyle.css" rel="stylesheet">
 			<link href="/css/bootstrap.css" rel="stylesheet">
 			<link href="/css/bootstrap-theme.css" rel="stylesheet">
 			<link href="/css/styling.css" rel="stylesheet">
+			<link href="/css/searchPage.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
-	<body>
+	<body style="margin-top: 300;">
 		<center>
 			<!-- div used to add padding between top of page and profile pic -->
 			<div id="whitespace"></div>
@@ -45,6 +46,122 @@
 		<a href="partyMode"><i class="fa fa-users"></i></a>
 		<a class="active" href="profile"><i class="fa fa-user"></i></a>
 	</div>
+
+	  <!-- NowPlayingBar -->
+  <div id="nowPlayingBarContainer">
+
+    <div id="nowPlayingBar">
+
+      <div id="nowPlayingLeft">
+        <div class="content">
+          <span class="albumLink">
+            <img class="albumArtwork" src="http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3">
+          </span>
+
+          <div class="trackInfo">
+            
+            <span class="trackName">
+              <span>BLEACH</span>
+            </span>
+
+            <span class="artistName">
+              <span>Brockhampton</span>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+
+      <audio id="myAudio"> 
+        <source src="/songs/bleach7.mp3" type="audio/mpeg">
+      </audio>
+
+      <div id="nowPlayingCenter">
+        <div class="content playerControls">
+          <div class="buttons">
+
+            <button onclick="playAudio();moveBar();" class="controlButton play" title="Play button">
+              <img src="/icons/play.png">
+            </button>
+
+            <button onclick="pauseAudio()" class="controlButton pause" title="Pause button">
+              <img src="/icons/pause.png">
+            </button>
+
+            <button onclick="goNext()" class="controlButton forward" title="Forward button" alt="Forward Button">
+              <img src="/icons/next.png">
+            </button>
+
+          </div>
+
+          <div class="playbackBar">
+            <span class="progressTime current">0.00</span>
+            <div class="progressBar">
+                <div class="progressBarBg">
+                  <div id="myBar"></div>
+                </div>
+            </div>
+            <span class="progressTime remaining">4.36</span>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script>
+    var playlist = ['/songs/chance1.mp3', '/songs/jayz2.mp3', '/songs/kdot3.mp3', '/songs/panther4.mp3', '/songs/rodeo5.mp3', '/songs/tyler5.mp3', '/songs/ye6.mp3', '/songs/bleach7.mp3'];
+
+
+    var x = document.getElementById("myAudio");
+    var n;
+    var i = 0;
+
+    function playAudio() {
+      x.play();
+      n = 1;
+    }
+    function pauseAudio() {
+      x.pause();
+      n = 2;
+    }
+
+   function goNext() {
+      i++;
+      if(i < playlist.length){
+        console.log(playlist[i]);
+        x.src = playlist[i];
+        x.play();
+      }
+      else {
+        i = 0;
+        ++i;
+        x.src = playlist[i];
+        x.play();
+      }
+    }
+
+    function moveBar(){
+      var elem = document.getElementById("myBar");
+      var width = 0.01;
+      var id = setInterval(frame, 500);
+      function frame() {
+        if(n==2) {
+          clearInterval(id);
+        }
+        else {
+          width++;
+          elem.style.width = width + 'px';
+        }
+      }
+    }
+  </script>
+
+  <a href="https://icons8.com">Icon pack by Icons8</a>
+
 
 <script src="/js/jquery-1.11.0.js"></script>
 <script src="/js/bootstrap.js"></script>

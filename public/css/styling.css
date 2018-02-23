@@ -1,20 +1,6 @@
-.playlist {
-    display: block;
-    float: left;
-    padding-right:90px;
-    padding-bottom: 20px;
-}
-
-
-#filter {
-    margin-bottom: -10px;
-}
 
 body {
     overflow: scroll;
-    padding-bottom: 70px;
-    font-size: 14px;
-    min-width: 720px;
 }
 
 .button {
@@ -33,6 +19,68 @@ body {
     cursor: pointer;
 }
 
+.buttonProf {
+    display: inline-block;
+    width: 250px;
+    border-radius: 5%;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.buttonChild {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+}
+
+.partyButton {
+    display: block;
+    width: 50%;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vw;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.facebook {
+    width: 200% !important;
+    height: 200% !important;
+}
+
+.logoutButton {
+    display: block;
+    width: 20%;
+    height: 50;
+    border-radius: 5%;
+    background-color: #000000; 
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vw;
+    margin: 32px 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.partyButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
 h3 {
     margin-top: 30px;
@@ -41,6 +89,24 @@ h3 {
 }
 
 
+.album {
+    display: block;
+    float: left;
+    padding-right:70px;
+}
+
+/*
+#partyTop {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DCDCDC;
+    top: 0;
+    width: 100%;
+}
+*/
 
 #spotifypic {
     height:40px;
@@ -80,9 +146,111 @@ h3 {
     margin-top:-8px;
 }
 
+/*
+#top {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DCDCDC;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#bottom {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3D3D3D;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+li {
+    display: inline-block;
+    text-align: center; 
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.bottom {
+    background-color: #4CAF50;
+}
+#topRight {
+    float: right;
+    background-color: #DCDCDC;
+}
+#home {
+    float: center;
+    align-self: center;
+    text-align: center;
+    background-color: #DCDCDC;
+}
+#homeText {
+    color: #000000;
+}
+#roundButt {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: #CACACA;
+}
+.button1 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+.button2 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button2:hover {
+    background-color: white;
+    color: black;
+}
+.button3 {
+    background-color: #DCDCDC; 
+    color: black; 
+    border: 2px solid #DCDCDC;
+    border-radius: 12px;
+}
+.button3:hover {
+    background-color: white;
+    color: black;
+}
+ Add a card effect for articles
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+*/
+
+
 .navbar {
     width: 100%;
-    background-color: #303030;
+    background-color: #000000;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -122,63 +290,11 @@ h3 {
     padding: 20px;
 }
 
-.buttonProf {
-    display: inline-block;
-    width: 250px;
-    border-radius: 5%;
-    max-width: 20px;
-    max-height: 20px;
-    background-color: #000000; 
-    color: white;
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 32px 16px;
-    cursor: pointer;
-}
-
-.partyButton {
-    display: block;
-    width: 50%;
-    border-radius: 5%;
-    background-color: #000000; 
-    color: white;
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 4vw;
-    margin: 32px 16px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.logoutButton {
-    display: block;
-    width: 20%;
-    height: 10%;
-    border-radius: 5%;
-    background-color: #000000; 
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 3vw;
-    margin: 32px 16px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.partyButton:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
 .fakeProf {
     border-radius: 50%;
-    zoom: 25%;
+    zoom: 100%;
 }
 
 #whitespace {
     padding:1%;
 }
-
