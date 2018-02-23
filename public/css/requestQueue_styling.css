@@ -8,6 +8,25 @@ body {
 	margin-top: 20%;
 }
 
+b, strong {
+    font-weight: bold;
+    size: 20;
+    text-size-adjust: 100px;
+    font-size: 30;
+}
+p {
+    margin: 0 0 10px;
+    font-size: 30;
+    color: springgreen;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: 25;
+    line-height: inherit;
+    background-color: cornflowerblue;
+}
+
 .button {
     display: block;
     float: left;
