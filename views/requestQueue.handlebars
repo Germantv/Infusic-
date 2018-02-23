@@ -4,6 +4,10 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+			<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
 			<script src="/js/bootstrap.js"></script>
 
 			<link href="/css/bootstrap.css" rel="stylesheet">
@@ -23,7 +27,7 @@
 				<div id="songBar">
 					<b id="s">{{song}}</b>
 					<p id="a">{{artist}}</p>
-					<script>
+<!--					<script>
 						console.log("work1");
 						var content = document.getElementById("s");
 						console.log("work2");
@@ -45,18 +49,66 @@
 							console.log("work8");
 						}, 3000);
 						console.log("work9");
-					</script>
+					</script> 
+-->
 				</div>
 			</div>
 			</center>
 		{{/each}}
 
-		<script>
-			setTimeout(function() {
-				var eq = document.getElementById("emptyQueue");
-				eq.style.display="none";
-			}, 3000);
-		</script>
+
+<!--script for hiding and displaying items-->
+<!--		<script src="/js/jquery-1.11.0.js">
+			$("#songBar").each(function() {
+				var content = document.getElementById("s");
+				var content2 = document.getElementById("a");
+				if (content.style.display != "none") {
+					content.style.display = "none";
+				}
+				else {} //do nothing
+				if (content2.style.display != "none") {
+					content2.style.display = "none";
+				}
+				else {};
+			});
+
+			//counter used for when to hide empty queue
+			/*var ctr = 0;
+
+			$("#songBar").each(function() {
+				var d1 = document.getElementById("s");
+				var d2 = document.getElementById("a");
+
+				//used to hide the "Queue is Empty" text
+				if (ctr == 0) {
+					ctr++;
+					setTimeout(function() {
+						if (d1.style.display != "block") {
+							d1.style.display = "block";
+						}	
+						if(d2.style.display != "block") {
+							d2.style.display = "block";
+						}
+
+						var eq = document.getElementById("emptyQueue");
+						eq.style.display = "none";
+					}, 3000);
+				}
+				//if "Queue is Empty" is already hidden
+				else {
+					setTimeout(function() {
+						if (d1.style.display != "block") {
+							d1.style.display = "block";
+						}	
+						if(d2.style.display != "block") {
+							d2.style.display = "block";
+						}
+					}, 3000);
+				}
+			});
+			*/
+		</script> 
+-->
 
 
 <!--		<script>startQueue();</script> -->
@@ -65,7 +117,7 @@
 
 	<div class="navbar">
 		<a href="/"><i class="fa fa-home"></i></a> 
-		<a href="search"><i class="fa fa-search"></i></a>
+		<a href="browse"><i class="fa fa-search"></i></a>
 		<a class="active" href="partyMode"><i class="fa fa-users"></i></a>
 		<a href="profile"><i class="fa fa-user"></i></a>
 	</div>
