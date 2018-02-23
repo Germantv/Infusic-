@@ -73,11 +73,19 @@ span.psw {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
     <button type="submit">Login</button>
+
+    <center>
+        <div class="facebook">
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        </div>
+    </center>
     
   </div>
 
   
 </form>
 
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 </body>
 </html>

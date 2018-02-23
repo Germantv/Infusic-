@@ -56,6 +56,11 @@ body {
     cursor: pointer;
 }
 
+.facebook {
+    width: 200% !important;
+    height: 200% !important;
+}
+
 .logoutButton {
     display: block;
     width: 20%;
