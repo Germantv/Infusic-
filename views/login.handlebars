@@ -5,7 +5,6 @@
 <style>
 body {font-family: Open Sans;}
 form 
-
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -14,13 +13,8 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-#icon {
-    padding-top: 20px;
-}
-
 button {
-    background-color: #7EBBFB;
+    background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -28,30 +22,29 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
 button:hover {
     opacity: 0.8;
 }
-
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
 }
-
 img.avatar {
     width: 40%;
     border-radius: 50%;
 }
-
 .container {
     padding: 16px;
 }
-
 span.psw {
     float: right;
     padding-top: 16px;
 }
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
@@ -66,23 +59,33 @@ span.psw {
 </head>
 <body>
 
-<form action="index">
-  <div class="imgcontainer">
-    <img src="/infusic.png" width=150px id="icon">
-  </div>
+<h2>Log into Infusic</h2>
 
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="http://www.pvhc.net/img29/vxhcghvzqhmbkzurygek.png" id="icon" width=50px>
+  </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <div>
-    <input type="text" placeholder="Enter Username" required>
-    </div>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" required>
-    <a href="index">
-    <button>Login</button>
-    </a>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit">Login</button>
+
+    <center>
+        <div class="facebook">
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        </div>
+    </center>
+    
   </div>
+
+  
 </form>
+
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 </body>
 </html>
