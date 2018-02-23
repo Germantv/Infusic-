@@ -61,7 +61,7 @@ if ('development' == app.get('env')) {
 
 app.get('/artists', artist.artistInfo);
 
-app.get('/', index.view);
+app.get('/', login.viewProject);
 app.get("/browse", browse.viewProject);
 app.get('/songspage', songspage.viewProject);
 app.get("/partyMode", partyMode.viewProject);
