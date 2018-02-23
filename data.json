@@ -1,0 +1,47 @@
+{
+	"playlists": [
+
+		{
+			"id": "ooz",
+			"a": "ooz",
+			"imgURL": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg",
+			"title": "The OOZ",	
+			"artist": "King Krule"			
+		},
+		{
+			"id": "saturation",
+			"a": "saturation",
+			"imgURL": "http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3",
+			"title": "Saturation III",	
+			"artist": "BROCKHAMPTON"	
+		},
+		{
+			"id": "trilogy",
+			"a": "trilogy",
+			"imgURL": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6979/6979156_sa.jpg",
+			"title": "Trilogy",	
+			"artist": "The Weeknd"	
+		}, 
+		{
+			"id": "steve",
+			"a": "steve",
+			"imgURL": "https://media.pitchfork.com/photos/5929c1edeb335119a49ed62f/1:1/w_320/34ea7d70.jpg",
+			"title": "Steve Lacy's Demo",	
+			"artist": "Steve Lacy"	
+		},
+		{
+			"id": "currents",
+			"a": "currents",
+			"imgURL": "https://images-na.ssl-images-amazon.com/images/I/A1LVEJikmZL._SL1500_.jpg",
+			"title": "Currents",	
+			"artist": "Tame Impala"	
+		},
+		{
+			"id": "rodeo",
+			"a": "rodeo",
+			"imgURL": "https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/f2/7a/e6/f27ae67f-f3dc-a4c7-a6df-92e9b8b8587d/886445423822.jpg/1200x630bb.jpg",
+			"title": "Rodeo",	
+			"artist": "Travis Scott"	
+		}
+	]
+}

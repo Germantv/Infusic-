@@ -1,3 +1,11 @@
+.playlist {
+    display: block;
+    float: left;
+    padding-right:90px;
+    padding-bottom: 20px;
+}
+
+
 #filter {
     margin-bottom: -10px;
 }
@@ -25,17 +33,14 @@ body {
     cursor: pointer;
 }
 
+
 h3 {
     margin-top: 30px;
     padding-left:16px;
     padding-bottom: 15px;
 }
 
-.album {
-    display: block;
-    float: left;
-    padding-right:70px;
-}
+
 
 #spotifypic {
     height:40px;
