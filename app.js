@@ -64,7 +64,6 @@ app.get('/artists', artist.artistInfo);
 app.get('/', index.view);
 app.get("/browse", browse.viewProject);
 app.get('/songspage', songspage.viewProject);
-app.get('/login', login.viewProject);
 app.get("/partyMode", partyMode.viewProject);
 app.get('/search', search.viewProject);
 app.get("/requestQueue", requestQueue.viewProject);
