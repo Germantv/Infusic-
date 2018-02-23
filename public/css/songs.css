@@ -1,9 +1,12 @@
-.album {
-    width: 100px;
-    position: center;
+#playlist,audio{
+	width:400px;
+	padding:20px;}
+
+.active a {
+	color:#5DB0E6;
+	text-decoration:
+	none;
 }
 
-p {
-    font-size: 100px;
-    color: #f2f2f2;
-}
+li a{color:black;padding:5px;display:block;}
+li a:hover{text-decoration:none;}
