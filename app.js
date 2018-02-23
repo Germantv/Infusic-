@@ -13,6 +13,8 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+var artist = require('./routes/artist');
+
 var index = require('./routes/index');
 var placeHold = require('./routes/placeHolder');
 var browse = require('./routes/browse');
@@ -57,6 +59,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.get('/artists', artist.artistInfo);
+
 app.get('/', index.view);
 app.get("/placeHolder", placeHold.viewProject);
 app.get("/browse", browse.viewProject);
@@ -75,6 +79,8 @@ app.get('/currents', currents.viewProject);
 app.get('/rodeo', rodeo.viewProject);
 app.get('/login', login.viewProject);
 app.get('/index', index.view);
+
+
 
 // Example route
 // app.get('/users', user.list);

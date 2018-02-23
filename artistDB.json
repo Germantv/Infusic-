@@ -1,0 +1,169 @@
+[
+    {
+    	"id": "1",
+    	"artist_name":"Kid Cudi",
+    	"artist_album":"Man on The Moon II",
+    	"artist_age":"26",
+    	"profile_image":"/images/mrRager.jpg"
+    },
+	{
+		"id": "2",
+		"artist_name":"Kaytranada",
+		"artist_album":"99.9%",
+		"artist_age":"24",
+		"profile_image":"/images/freud.jpeg"
+	},
+    {
+    	"id": "3",
+    	"artist_name":"Kanye West",
+    	"artist_album":"The College Dropout",
+    	"artist_age":"66",
+    	"profile_image":"/images/dropoutYe.jpg"
+    },
+    {	
+    	"id": "4",
+    	"artist_name":"Travis Scott",
+    	"artist_album":"Days Before Rodeo",
+    	"artist_age":"22",
+    	"profile_image":"/images/b4rodeo.jpg"
+    },
+    {
+    	"id": "5",
+    	"artist_name":"Tyler the Creator",
+    	"artist_album":"Flower Boy",
+    	"artist_age":"33",
+    	"profile_image":"/images/flowerBoy.jpeg"
+    },
+    {
+    	"id": "6",
+    	"artist_name":"Frank Ocean",
+    	"artist_album":"Channel Orange",
+    	"artist_age":"25",
+    	"profile_image":"/images/orange.jpg"
+    },
+    {
+    	"id": "7",
+    	"artist_name":"Rae Sremmurd",
+    	"artist_album":"SremmLife 2",
+    	"artist_age":"26",
+    	"profile_image":"/images/srem.jpg"
+    },
+    {
+    	"id": "8",
+    	"artist_name":"Chance The Rapper",
+    	"artist_album":"Acid Rap",
+    	"artist_age":"25",
+    	"profile_image":"/images/acidRap.jpg"
+    },
+    {
+    	"id": "9",
+    	"artist_name":"Rae Sremmurd",
+    	"artist_album":"SremmLife",
+    	"artist_age":"39",
+    	"profile_image":"/images/sremm.jpg"
+    },
+    {
+    	"id": "10",
+    	"artist_name":"Pink Floyd",
+    	"artist_album":"The Dark Side of The Moon",
+    	"artist_age":"23",
+    	"profile_image":"/images/pinkFloyd.jpeg"
+    },
+    {	
+    	"id": "11",
+    	"artist_name":"King Krule",
+    	"artist_album":"The OOZ",
+    	"artist_age":"59",
+    	"profile_image":"/images/ooz.jpg"
+    },
+    {
+    	"id": "12",
+    	"artist_name":"Rex Orange County",
+    	"artist_album":"Apricot Princess",
+    	"artist_age":"55",
+    	"profile_image":"/images/rex.png"
+    },
+    {
+    	"id": "13",
+    	"artist_name":"Jaden Smith",
+    	"artist_album":"Syre",
+    	"artist_age":"39",
+    	"profile_image":"/images/syre.jpg"
+    },
+    {
+    	"id": "14",
+    	"artist_name":"Tyler the Creator",
+    	"artist_album":"Wolf",
+    	"artist_age":"23",
+    	"profile_image":"/images/tyler.jpg"
+    },
+    {
+    	"id": "15",
+    	"artist_name":"Kanye West",
+    	"artist_album":"Graduation",
+    	"artist_age":"38",
+    	"profile_image":"/images/YeGrad.jpg"
+    },
+    {
+    	"id": "16",
+    	"artist_name":"SchoolBoy Q",
+    	"artist_album":"Oxymoron",
+    	"artist_age":"32",
+    	"profile_image":"/images/oxymoron.jpg"
+    },
+    {	
+    	"id": "17",
+    	"artist_name":"Kehlani",
+    	"artist_album":"SweetSexySavage",
+    	"artist_age":"24",
+    	"profile_image":"/images/kehlani.jpg"
+    },
+    {
+    	"id": "18",
+    	"artist_name":"Kendrick Lamar",
+    	"artist_album":"good kid, m.A.A.d city",
+    	"artist_age":"25",
+    	"profile_image":"/images/kdot.jpg"
+    },
+    {
+    	"id": "19",
+    	"artist_name":"JAY Z",
+    	"artist_album":"The BluePrint",
+    	"artist_age":"59",
+    	"profile_image":"/images/jayZ.jpg"
+    },
+    {	"id": "20",
+    	"artist_name":"Daniel Caesar",
+    	"artist_album":"Freudian",
+    	"artist_age":"26",
+    	"profile_image":"/images/freud.jpeg"
+    },
+    {
+    	"id": "21",
+    	"artist_name":"Drake",
+    	"artist_album":"More Life",
+    	"artist_age":"33",
+    	"profile_image":"/images/moreLife.jpg"
+    },
+    {	
+    	"id": "22",
+    	"artist_name":"Jay Rock",
+    	"artist_album":"90059",
+    	"artist_age":"23",
+    	"profile_image":"/images/jayRock.jpg"
+    },
+    {
+    	"id": "23",
+    	"artist_name":"Kendrick Lamar",
+    	"artist_album":"Black Panther",
+    	"artist_age":"25",
+    	"profile_image":"/images/blackPanther.jpg"
+    },
+    {
+    	"id": "24",
+    	"artist_name":"JAY Z",
+    	"artist_album":"4:44",
+    	"artist_age":"42",
+    	"profile_image":"/images/444.png"
+    }
+]
