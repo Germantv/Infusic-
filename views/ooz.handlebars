@@ -14,12 +14,13 @@
 <body>
 <div class="container">
 <button onclick="goBack()">Go Back</button>
+
 <script>
 	function goBack() {
 		window.history.back();
 	}
 </script>
-
+ 
 
 {{#each albums}}
 <center>
@@ -31,7 +32,32 @@
       </div>
 {{/each}}
 
+<!--
+<audio id="biscuit">
+  <source src="/public/songs/biscuit.mp3">
+</audio>
+-->
 
+<div type="button" value="PLAY" onclick="play()">
+01 <em>Biscuit Town</em><input type="button" value="PLAY"  onclick="play()">
+
+
+<script>
+function play() { 
+var biscuit = document.getElementById("biscuit"); 
+    biscuit.play(); 
+} 
+</script>
+</div>
+
+<!--
+<div data-url="https://soundcloud.com/monomotionmusic/mangobay" class="playable playing">02 <em>The Locomotive</em><input type="button" value="PLAY"  onclick="play()"></div>
+<div data-url="https://soundcloud.com/monomotionmusic/mangobay" class="playable playing">03 <em>Dum Surfer</em><input type="button" value="PLAY"  onclick="play()"></div>
+<div data-url="https://soundcloud.com/monomotionmusic/mangobay" class="playable playing">04 <em>Slush Puppy</em><input type="button" value="PLAY"  onclick="play()"></div>
+<div data-url="https://soundcloud.com/monomotionmusic/mangobay" class="playable playing">05 <em>Logos</em><input type="button" value="PLAY"  onclick="play()"></div>
+-->
+
+<audio id="biscuit" src="/music/bleach.mp3"></audio>
 <script src="/js/jquery-1.11.0.js"></script>
 <script src="/js/bootstrap.js"></script>
 
