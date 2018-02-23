@@ -17,10 +17,15 @@
           var regex = new RegExp(searchField, "i");
           var output = '<div class="row">';
           var count = 1;
+
     			$.each(data, function(key, val){
-    				
+
+    				var myFunc = function myFunction() {
+    					console.log(val.id);
+  		  			}
+
     				if ((val.artist_album.search(regex) != -1) || (val.artist_name.search(regex) != -1)) {
-    				  output += '<div class="col-xs-6 well"> <button onclick="myFunction()">';
+    				  output += '<div class="col-xs-6 well"> <button onclick="'+console.log(val.id)+'">';
     				  output += '<div class="col-xs-6"><img class="img-responsive" src="'+val.profile_image+'" alt="'+ val.artist_name +'" /></div>';
     				  output += '<div class="col-xs-7">';
     				  output += '<h6>' + val.artist_name + '</h6>';
