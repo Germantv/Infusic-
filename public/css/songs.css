@@ -1,4 +1,4 @@
-#playlist,audio{
+#playlist, audio{
 	width:400px;
 	padding:20px;}
 
@@ -8,5 +8,13 @@
 	none;
 }
 
-li a{color:black;padding:5px;display:block;}
-li a:hover{text-decoration:none;}
+li a {
+	color:black;
+	padding:5px;
+	display:block;
+}
+
+li a:hover {
+text-decoration:
+none;
+}
