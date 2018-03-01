@@ -1,15 +1,27 @@
+body {
+	background-image: url("https://78.media.tumblr.com/d3c70f4576732d4562f2bb2a1be01f51/tumblr_ov0ei7Mfc71v3baxro4_1280.jpg");
+}
+
+#back {
+	margin-top: 50px;
+}
+
+#audioPlayer {
+	margin-bottom: 20px;
+}
+
 #playlist {
 	list-style:none;
-	margin-right: 30px;
+	margin-right: 32px;
 }
 
 #playlist li a{
-	color:black;
+	color:white;
 	text-decoration: none;
 }
 
 #playlist .current-song a {
-	color: blue;
+	color: #00a8e6;
 }
 
 #pic {
