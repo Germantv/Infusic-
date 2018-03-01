@@ -37,6 +37,41 @@ header p {
 	text-align: justify;
 }
 
+#filters_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-top: 5%;
+}
+
+#playlists_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-bottom: 5%;
+}
+
+#username_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-top: 1%;
+}
+
+#search_title {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-bottom: 2%;
+}
+
+#recommended_title, #recentlyplayed_title {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-right: 10%;
+}
+
 img {
 	width: 233px;
 	height: 250px;
