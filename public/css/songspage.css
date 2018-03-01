@@ -15,7 +15,7 @@ body {
 	margin-right: 32px;
 }
 
-#playlist li a{
+#playlist li a, p1, h4 {
 	color:white;
 	text-decoration: none;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 #pic {
-	margin-top: 50px;   
+	margin-top: 20px;   
 	margin-bottom: 30px;
 }
 

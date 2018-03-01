@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('rodeo', {
     'albums': [
     	{
+            'album': 'Rodeo',
+            'artist': 'Travis Scott',
     		'id': 'rodeo',
     		'image': 'https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/f2/7a/e6/f27ae67f-f3dc-a4c7-a6df-92e9b8b8587d/886445423822.jpg/1200x630bb.jpg',
     		'list': ['01 Oh My Dis Side',

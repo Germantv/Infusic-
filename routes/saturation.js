@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('saturation', {
     'albums': [
     	{
+            'album': 'Saturation III',
+            'artist': 'BROCKHAMPTON',
     		'id': 'saturation',
     		'image': 'http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-',
     		'list': ['01 BOOGIE',
