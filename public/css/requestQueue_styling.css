@@ -2,6 +2,22 @@ body {
     overflow: scroll;
 }
 
+#queue {
+    padding-bottom: 3%;
+    font-size: 500%;
+    font-style: italic;
+    font-style: bold;
+    color: white;
+}
+
+#songbar1, #songbar2, #songbar3, #songbar4,
+#songbar5, #songbar6, #songbar7, #songbar7,
+#songbar8, #songbar9, #songbar10, #songbar11,
+#songbar12, #songbar13, #songbar14, #songbar15,
+#songbar16, #songbar17 {
+    padding-bottom: 1%;
+}
+
 #emptyQueue {
 	position: center;
 	color: #DCDCDC;
