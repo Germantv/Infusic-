@@ -1,3 +1,16 @@
+#playlist {
+	list-style:none;
+	margin-right: 30px;
+}
+
+#playlist li a{
+	color:black;
+	text-decoration: none;
+}
+
+#playlist .current-song a {
+	color: blue;
+}
 
 #pic {
 	margin-top: 50px;   
