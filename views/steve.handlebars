@@ -13,12 +13,8 @@
 
 <body>
 <div class="container">
-<button onclick="goBack()">Go Back</button>
-<script>
-	function goBack() {
-		window.history.back();
-	}
-</script>
+<button onclick="goBack()" id="back">Go Back</button>
+
 
 
 {{#each albums}}
@@ -26,25 +22,24 @@
 <div id="{{id}}">
       <img id="pic" src="{{image}}" width=200px height=200px>
       </div>
-      <div>
-      </div>
 {{/each}}
 
 
 <div>
-<audio id="biscuit" preload="auto" tabindex="0" controls="" type="audio/mpeg">
-        <source type="audio/mp3" src="/songs/Some.mp3">
+  <center>
+    <audio src="" controls id="audioPlayer">
+      Sorry, your browser doesn't support html5!
     </audio>
-    	<ul id="playlist">
-        <li class="active"><a>01 Ryd</a></li>
-        <li>02 Dark Red</li>
-        <li>03 Some</a></li>
-        
+      <ul id="playlist">
+        <li class="current-song"><a href="/songs/some.mp3">Some</a></li>
+        <li><a href="/songs/ryd.mp3">Ryd</a></li>
+        <li><a href="/songs/darkred.mp3">Dark Red</a></li>
     </ul>
  </div>
 
-<script src="/js/jquery-1.11.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/bootstrap.js"></script>
+<script src="/js/songs.js"></script>
 
 </body>
 </html>
