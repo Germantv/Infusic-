@@ -2,68 +2,50 @@
 <html>
 
 <head>
-	<title>Infusic</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.css" rel="stylesheet">
-		<link href="css/songspage.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Infusic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/songspage.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 
 <body>
 <div class="container">
-<button onclick="goBack()">Go Back</button>
+<button onclick="goBack()" id="back">Go Back</button>
 
-<script>
-	function goBack() {
-		window.history.back();
-	}
-</script>
- 
 
 {{#each albums}}
 <center>
 <div id="{{id}}">
+      <div>
+      <h4>{{album}}</h4>
+      <p1>{{artist}}</p1>
+        </div>
       <img id="pic" src="{{image}}" width=200px height=200px>
       </div>
 {{/each}}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 61a2594ff3686574276c7df67abf4adc8e5db096
+
 
 <div>
-<audio id="biscuit" preload="auto" tabindex="0" controls="" type="audio/mpeg">
-        <source type="audio/mp3" src="/songs/biscuit.mp3">
+    <center>
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
     </audio>
-    	<ul id="playlist">
-        <li class="active"><a>Biscuit Town</a></li>
-        <li>Locomotive</li>
-        <li>Dum Surfer</a></li>
-        
+        <ul id="playlist">
+        <li class="current-song"><a href="/songs/biscuit.mp3">Biscuit</a></li>
+        <li><a href="/songs/locomotive.mp3">Locomotive</a></li>
+        <li><a href="/songs/dumsurfer.mp3">Dum Surfer</a></li>
     </ul>
  </div>
 
-<<<<<<< HEAD
-<div>
-<audio id="biscuit" preload="auto" tabindex="0" controls="" type="audio/mpeg">
-        <source type="audio/mp3" src="/songs/biscuit.mp3">
-    </audio>
-    	<ul id="playlist">
-        <li class="active"><a>Biscuit Town</a></li>
-        <li>Locomotive</li>
-        <li>Dum Surfer</a></li>
-        
-    </ul>
- </div>
-=======
->>>>>>> 61a2594ff3686574276c7df67abf4adc8e5db096
 
-<script src="/js/jquery-1.11.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/songs.js"></script>
 
