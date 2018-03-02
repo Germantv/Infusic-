@@ -1,54 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Infusic - Login</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/newLogin.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Infusic - Login</title>
+    <meta name="viewport" content="width=800">
+    <link href="/css/login_styling.css" rel="stylesheet">
 </head>
 
 <body>
-<<<<<<< HEAD
-	<div class="container-fluid bg">
-		<div class="row">
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
-			<div class="col-md-4 col-sm-4 col-xs-12">
-				<!--form start-->
-				<form action="index" class="form-container">
-					  <div class="imgcontainer">
-					    <img src="/icons/infusic.png" id="icon" width=150px>
-					  </div>
-				  <div class="form-group">
-				    <label for="uname">Username</label>
-				    <input type="username" class="form-control" id="exampleUsername" placeholder="Username">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				  </div>
-				  <div class="checkbox">
-				    <label>
-				      <input type="checkbox"> Remember me
-				    </label>
-            <a href="#"><p>Don't have an account?</p></a>
-				  </div>
-				<a href="index">
-				  <button type="submit" class="btn btn-success btn-block">Login</button>
-				</a>
-				<div class="facebook">
-            		<p>Or Connect with Facebook!<p><fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-        </div>
-
-				</form>
-				<!--form end-->
-			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
-		</div>
-	</div>
-=======
 
 <form action="index">
   <div class="imgcontainer">
@@ -109,13 +67,11 @@
 </div>
 
   
->>>>>>> 3dfe8ad13dde968d9cd78a046eb91e0eb0c47d10
 {{> facebook}}
 <script src="/js/facebook.js"></script>
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
