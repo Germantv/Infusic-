@@ -19,11 +19,39 @@ body {
 }
 
 #songbar1, #songbar2, #songbar3, #songbar4,
-#songbar5, #songbar6, #songbar7, #songbar7,
+#songbar5, #songbar6, #songbar7,
 #songbar8, #songbar9, #songbar10, #songbar11,
 #songbar12, #songbar13, #songbar14, #songbar15,
 #songbar16, #songbar17 {
     padding-bottom: 1%;
+}
+
+#approveButton1, #approveButton2, #approveButton3, #approveButton4,
+#approveButton5, #approveButton6, #approveButton7,
+#approveButton8, #approveButton9, #approveButton10, #approveButton11,
+#approveButton12, #approveButton13, #approveButton14, #approveButton15,
+#approveButton16, #approveButton17 {
+   /* background: url(../icons/plus.png);*/
+   background-color: green;
+   color: white;
+   font-size: 400%;
+   width: 15%;
+   height: 10%;
+   border-radius: 50%;
+}
+
+#denyButton1, #denyButton2, #denyButton3, #denyButton4,
+#denyButton5, #denyButton6, #denyButton7,
+#denyButton8, #denyButton9, #denyButton10, #denyButton11,
+#denyButton12, #denyButton13, #denyButton14, #denyButton15,
+#denyButton16, #denyButton17 {
+   /* background: url(../icons/x.png);*/
+   background-color: red;
+   color: white;
+   font-size: 400%;
+   width: 15%;
+   height: 10%;
+   border-radius: 50%;
 }
 
 #emptyQueue {
