@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('currents', {
     'albums': [
     	{
+            'album': 'Currents',
+            'artist': 'Tame Impala',
     		'id': 'currents',
     		'image': 'https://images-na.ssl-images-amazon.com/images/I/A1LVEJikmZL._SL1500_.jpg',
     		'list': ['01 Let It Happen',

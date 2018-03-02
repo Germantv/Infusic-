@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('steve', {
     'albums': [
     	{
+            'album': 'Steve Lacys Demo',
+            'artist': 'Steve Lacy',
     		'id': 'steve',
     		'image': 'https://media.pitchfork.com/photos/5929c1edeb335119a49ed62f/1:1/w_320/34ea7d70.jpg',
     		'list': ['01 Looks',

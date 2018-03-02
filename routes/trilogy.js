@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('trilogy', {
     'albums': [
     {
+            'album': 'Trilogy',
+            'artist': 'The Weeknd',
             'id': 'trilogy',
             'image': 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6979/6979156_sa.jpg',
             'list': ['01 High For This',
