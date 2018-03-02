@@ -10,6 +10,14 @@ body {
     color: white;
 }
 
+#requestqueue_title  {
+    border-radius: 0%;
+    width: auto;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 #songbar1, #songbar2, #songbar3, #songbar4,
 #songbar5, #songbar6, #songbar7, #songbar7,
 #songbar8, #songbar9, #songbar10, #songbar11,
