@@ -1,20 +1,6 @@
-.playlist {
-    display: block;
-    float: left;
-    padding-right:90px;
-    padding-bottom: 20px;
-}
-
-
-#filter {
-    margin-bottom: -10px;
-}
 
 body {
     overflow: scroll;
-    padding-bottom: 70px;
-    font-size: 14px;
-    min-width: 720px;
 }
 
 .button {
@@ -33,13 +19,120 @@ body {
     cursor: pointer;
 }
 
-
-h3 {
-    margin-top: 30px;
-    padding-left:16px;
-    padding-bottom: 15px;
+#spotify,
+#tidal {
+    margin: 60px;
+    padding: 18px 57px 30px 53px;
+}
+#apple {
+    margin: 60px;
+    padding: 15px 60px 33px 57px;
 }
 
+#spotify:hover,
+#apple:hover,
+#tidal:hover {
+    background-color: #7EBBFB; 
+}
+#spotifypic2 {
+    height:40px;
+    width:40px;
+    margin-left: -20px;
+    margin-top: -15px;
+}
+#applepic2 {
+    height: 30px;
+    width: 25px;
+    margin-left: -13px;
+    margin-top: -10px;
+    margin-bottom: 22px;
+    margin-right: -15px;
+}
+#tidalpic2 {
+    height: 47px;
+    width: 45px;
+    margin-bottom: 8px;
+    margin-top: -18px;
+    margin-left: -17px;
+}
+
+.buttonProf {
+    display: inline-block;
+    width: 250px;
+    border-radius: 5%;
+    max-width: 20px;
+    max-height: 20px;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.buttonChild {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    bottom: 0;
+}
+
+.partyButton {
+    display: block;
+    width: 50%;
+    background-color: #000000; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4vw;
+    margin: 32px 16px;
+    cursor: pointer;
+}
+
+.facebook {
+    width: 200% !important;
+    height: 200% !important;
+}
+
+.logoutButton {
+    display: block;
+    width: 20%;
+    height: 50;
+    border-radius: 5%;
+    background-color: #000000; 
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3vw;
+    margin: 32px 16px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.partyButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1.playHead {
+    margin-top: 17px;
+    padding-left:0px;
+    padding-bottom: 31px;
+    text-align: left;
+    color: powderblue;
+}
+
+
+.album {
+    display: block;
+    float: left;
+    padding-right:70px;
+}
 
 
 #spotifypic {
@@ -56,19 +149,12 @@ h3 {
     margin-top: -22px;
 }
 
-#applepic2 {
-    height:30px;
-    width:24px;
-    margin-left: -12px;
-    margin-top: -22px;
-    margin-bottom: 15px;
-}
 
 #tidalpic {
-    height:50px;
-    width:50px;
+    height: 48px;
+    width: 50px;
     margin-left: -25px;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 #title {
@@ -80,9 +166,11 @@ h3 {
     margin-top:-8px;
 }
 
+
+
 .navbar {
     width: 100%;
-    background-color: #303030;
+    background-color: #000000;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -122,63 +210,11 @@ h3 {
     padding: 20px;
 }
 
-.buttonProf {
-    display: inline-block;
-    width: 250px;
-    border-radius: 5%;
-    max-width: 20px;
-    max-height: 20px;
-    background-color: #000000; 
-    color: white;
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 32px 16px;
-    cursor: pointer;
-}
-
-.partyButton {
-    display: block;
-    width: 50%;
-    border-radius: 5%;
-    background-color: #000000; 
-    color: white;
-    padding: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 4vw;
-    margin: 32px 16px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.logoutButton {
-    display: block;
-    width: 20%;
-    height: 10%;
-    border-radius: 5%;
-    background-color: #000000; 
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 3vw;
-    margin: 32px 16px;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.partyButton:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
 .fakeProf {
     border-radius: 50%;
-    zoom: 25%;
+    zoom: 100%;
 }
 
 #whitespace {
     padding:1%;
 }
-

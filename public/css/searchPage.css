@@ -7,15 +7,16 @@
 body {
 	overflow: scroll;
     padding-bottom: 70px;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
     min-width: 720px;
+    background-image: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg);
 }
  
 #container {
 	width: 100%;
 	overflow: hidden;
-	margin: 50px auto;
-	background: white;
+	margin: 30px auto;
 }
 
 /*header*/
@@ -27,12 +28,48 @@ header {
 header h1 {
 	text-align: left;
 	font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
-	
+	color: white;
+    text-shadow: 8px 8px black;
 }
  
 header p {
 	font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
 	text-align: justify;
+}
+
+#filters_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-top: 5%;
+}
+
+#playlists_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-bottom: 5%;
+}
+
+#username_title  {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-top: 1%;
+}
+
+#search_title {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-bottom: 2%;
+}
+
+#recommended_title, #recentlyplayed_title {
+	border-radius: 0%;
+	width: auto;
+	height: auto;
+	padding-right: 10%;
 }
 
 img {
