@@ -1,17 +1,41 @@
+body {
+	padding-top: 50px;
+	background-image: url("https://78.media.tumblr.com/d3c70f4576732d4562f2bb2a1be01f51/tumblr_ov0ei7Mfc71v3baxro4_1280.jpg");
+}
+
+#back {
+	margin-bottom: 20px;
+}
+
+#playlist {
+	list-style:none;
+	text-align: center;
+}
+
+#playlist li a, h4, p1 {
+	color:white;
+	text-decoration:none;
+}
+
+#playlist .current-song a{
+	color: #3CA7E4;
+}
 
 #pic {
-	margin-top: 50px;   
-	margin-bottom: 30px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
-p {
-    font-size: 15px;
-    position: center;
-    margin-top: 50px;
+#audioPlayer {
+	margin-bottom: 20px;
 }
 
-p:active {
-    background-color: blue;
+ul li {
+	padding-right: 30px;
 }
 
-
+p, h4 {
+	color:white;
+}

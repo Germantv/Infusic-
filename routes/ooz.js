@@ -5,6 +5,8 @@ exports.viewProject = function(req, res) { 
   res.render('ooz', {
     'albums': [
     	{
+            'album': 'The OOZ',
+            'artist': 'King Krule',
     		'id': 'ooz',
     		'image': 'https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg',
     		'list': ['01 Biscuit Town',

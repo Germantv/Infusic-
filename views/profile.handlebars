@@ -12,6 +12,8 @@
 			<link href="/css/styling.css" rel="stylesheet">
 			<link href="/css/searchPage.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 
 	<body style="margin-top: 300;">
@@ -19,8 +21,10 @@
 			<!-- div used to add padding between top of page and profile pic -->
 			<div id="whitespace"></div>
 
-			<img class="fakeProf" src="/fakeProfile.png" alt="Profile Photo">
-			<h1 style="color: honeydew; text-shadow: 6px 6px darkgreen;">USERNAME</h1>
+      <div class="userPhoto">
+		  	<img class="fakeProf" src="/fakeProfile.png" alt="Profile Photo">
+      </div>
+      <img src="/icons/username_title.png" id="username_title">
 
 			<div id="filters">
 			<h3 style="color: honeydew; text-shadow: 6px 6px darkgreen;">Infused Filters</h3>
@@ -36,16 +40,14 @@
 
 		</center>
 
-	</body>
+      <div class="navbar">
+    <a href="/index"><i class="fa fa-home"></i></a> 
+    <a href="search"><i class="fa fa-search"></i></a>
+    <a href="partyMode"><i class="fa fa-users"></i></a>
+    <a class="active" href="profile"><i class="fa fa-user"></i></a>
+  </div>
 
-	<div class="navbar">
-		<a href="/index"><i class="fa fa-home"></i></a> 
-		<a href="search"><i class="fa fa-search"></i></a>
-		<a href="partyMode"><i class="fa fa-users"></i></a>
-		<a class="active" href="profile"><i class="fa fa-user"></i></a>
-	</div>
-
-	  <!-- NowPlayingBar -->
+    <!-- NowPlayingBar -->
   <div id="nowPlayingBarContainer">
 
     <div id="nowPlayingBar">
@@ -159,6 +161,13 @@
   </script>
 
   <a href="https://icons8.com">Icon pack by Icons8</a>
+
+
+
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+	</body>
+
 
 
 <script src="/js/jquery-1.11.0.js"></script>
