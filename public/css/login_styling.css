@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
     font-size: 150%;
-    background-image: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg);
+    background: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg);
+    background-size: cover;
 }
 
 #loginbtn {

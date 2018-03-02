@@ -9,7 +9,6 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <link href="/css/oozPage_BStyling.css" rel="stylesheet">
-
     <link href="/css/nowPlayingBarStyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -33,13 +32,21 @@
           <a href="ooz">
             <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f7/e0/24/f7e024fd-25df-eb5d-2308-3be91aaab3c3/cover.jpg/600x600bf.jpg"
               width=250px height=250px a href="ooz">
-            <p id="title">The OOZ</p>
-            <p id="artist">King Krule</p>
           </a>
+            <h1 id="title">The OOZ</h1>
+            <h1 id="artist">King Krule</h1>
         </div>
 
     </div>
   </div>
+  <div id="playlist">
+    <div class="buttonsDiv">
+            <button onclick="playAudio();" class="btn_one">Czech One</button>
+            <button onclick="playAudio();goNext();dumSurf();" class="btn_one">Dum Surfer</button>
+            <button onclick="playAudio();goNext();halfMan();" class="btn_one">Half Man Half Shark</button>
+      </div> 
+    </div>
+
 
   <!-- NowPlayingBar -->
   <div id="nowPlayingBarContainer">
@@ -81,10 +88,6 @@
 
             <button onclick="pauseAudio()" class="controlButton pause" title="Pause button">
               <img src="/icons/pause.png">
-            </button>
-
-            <button onclick="goNext();dumSurf();" class="controlButton forward" title="Forward button" alt="Forward Button">
-              <img src="/icons/next.png">
             </button>
 
           </div>
@@ -136,11 +139,12 @@
     }
 
     function dumSurf(){
-      var spanText = document.getElementById("trackName");
-      spanText.innerHTML = "Dum Surfer";
+      document.getElementById("trackName").innerHTML = "Dum Surfer";
     }
 
-
+    function halfMan(){
+      document.getElementById("trackName").innerHTML = "Half Man Half Shark";
+    }
 
     function moveBar(){
       var elem = document.getElementById("myBar");
@@ -158,8 +162,7 @@
     }
   </script>
 
-  <script src="/js/jquery-1.11.0.js"></script>
-  <script src="/js/bootstrap.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/js/bootstrap.js"></script>
 </body>
 </html>
