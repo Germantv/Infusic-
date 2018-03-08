@@ -63,6 +63,8 @@
       opacity: 1;
     }
   </style>
+
+
 </head>
 
 
@@ -143,7 +145,7 @@
         <a href="javascript:void(0)" class="btn_tidal">Tidal</a>
           <section class="slider tidal">
             <div>
-              <img src="/images/ooz.jpg">
+                <a id="oozRand" onclick="randOoz()"><img src="/images/ooz.jpg"></a>
             </div>
             <div>
               <img src="/images/orange.jpg">
@@ -258,6 +260,20 @@
             
             document.getElementById("nav").style.width = "0";
             document.getElementById("open").style.display = "block";
+        }
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        function randOoz() {
+           var x = getRandomInt(2);
+           var page = document.getElementById("oozRand");
+            if (x == 1) {
+             page.href="ooz";
+            }
+            else {
+             page.href="oozPage_B";
+           }
         }
     </script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
