@@ -8,7 +8,7 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
-function intializePage() {
+function initializePage() {
 	$('#btn1, #btn2, #btn3').click(function() {
 		ga('send', 'event', 'songs', 'click');
 	});
