@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#bg img{
+    height: 100vh;
+    width: 105%;
+    -webkit-filter:blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#blackLayer{
+    height: -webkit-fill-available;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    z-index: 99;
+}
+#main{
+    height: 12%;
+    width: 100%;
+    background-color: #6e6fa9a6;
+    border-radius: 3%;
+    position: sticky;
+    top: 99%;
+    left: 0%;
+    transform: translate(0%,-1%);
+    z-index: 999;
+}
+#image img{
+    height: 60%;
+    width: 17%;
+    /* margin-top: 2%; */
+    /* margin-left: 2%; */
+    /* margin-bottom: 2%; */
+    margin: 2%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border-radius: 42%; */
+}
+#player{
+    padding: inherit;
+    color: #fff;
+}
+#songTitle{
+    width: 300px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+#buttons{
+    height: 8.5vh;
+    width: 44%;
+    margin-top: 28px;
+    position:relative;
+    top: 10%;
+    left: 58%;
+    transform: translate(-50%,-180%);
+}
+#play,#next,#pre{
+    width: 30%;
+    height: 80%;
+    /* border: 0; */
+    border-color: white;
+    background-color: #53609226;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 106%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+}
+#next{
+    width: 20%;
+    height: 50%;
+    left: 91%;
+}
+#pre{
+    width: 20%;
+    height: 50%;
+    left: 0%;
+}
+#play img,#next img,#pre img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seek-bar{
+    width: 62%;
+    height: 0.2vh;
+    background-color: #dedada;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 24%;
+    margin-top: -16%;
+    cursor: pointer;
+}
+#fill{
+    height: 110%;
+    background-color: #686bff;
+    border-radius: 20px;
+}
+#handle{
+    width: 9px;
+    height: 9px;
+    background-color: #1c17ce;
+    border-radius: 50%;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
