@@ -117,3 +117,57 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+    /*
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+*/
+
+/*
+    * {
+      box-sizing: border-box;
+      width: 300px;
+      height: 300px;
+      border: 10px solid blue;
+    }
+
+    #h1 {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+*/
+
+    .slider {
+        width: 85%;
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
