@@ -41,9 +41,9 @@
   </div>
   <div id="playlist">
     <div class="buttonsDiv">
-            <button onclick="playAudio();" class="btn_one">Czech One</button>
-            <button onclick="playAudio();goNext();dumSurf();" class="btn_one">Dum Surfer</button>
-            <button onclick="playAudio();goNext();halfMan();" class="btn_one">Half Man Half Shark</button>
+            <button onclick="playAudio();" class="btn_one" id="b1">Czech One</button>
+            <button onclick="playAudio();goNext();dumSurf();" class="btn_one" id="b2">Dum Surfer</button>
+            <button onclick="playAudio();goNext();halfMan();" class="btn_one" id="b3">Half Man Half Shark</button>
       </div> 
     </div>
 
@@ -82,11 +82,11 @@
         <div class="content playerControls">
           <div class="buttons">
 
-            <button onclick="playAudio();moveBar();" class="controlButton play" title="Play button">
+            <button onclick="playAudio();moveBar();" class="controlButton play" id="b4" title="Play button">
               <img src="/icons/play.png">
             </button>
 
-            <button onclick="pauseAudio()" class="controlButton pause" title="Pause button">
+            <button onclick="pauseAudio()" class="controlButton pause" title="Pause button" id="b5">
               <img src="/icons/pause.png">
             </button>
 

@@ -14,7 +14,7 @@
 
 <body>
 <div class="container">
-<button onclick="goBack()" id="back">Go Back</button>
+<button onclick="goBack()" id="back" class="btn">Go Back</button>
 
 
 {{#each albums}}
@@ -31,13 +31,16 @@
 
 <div>
     <center>
-    <audio src="" controls id="audioPlayer">
+    <audio src="" controls id="audioPlayer" class="btn">
         Sorry, your browser doesn't support html5!
     </audio>
         <ul id="playlist">
-        <li class="current-song"><a href="/songs/biscuit.mp3">Biscuit</a></li>
-        <li><a href="/songs/locomotive.mp3">Locomotive</a></li>
-        <li><a href="/songs/dumsurfer.mp3">Dum Surfer</a></li>
+
+        <li class="current-song" id="btn1"><a href="/songs/biscuit.mp3">Biscuit</a></li>
+
+        <li id="btn2"><a href="/songs/locomotive.mp3">Locomotive</a></li>
+
+        <li id="btn3"><a href="/songs/dumsurfer.mp3">Dum Surfer</a></li>
     </ul>
  </div>
 
