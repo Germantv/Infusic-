@@ -323,8 +323,8 @@
         function pre(){
             
             currentSong--;
-            if(currentSong <= 0){
-                currentSong = songs.length;
+            if(currentSong < 0){
+                currentSong = songs.length-1;
             }
             playSong();
             $("#play img").attr("src","/icons/pause.png");

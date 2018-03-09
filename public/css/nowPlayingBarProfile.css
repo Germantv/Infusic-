@@ -7,7 +7,7 @@
 	left: 0;
 	position: fixed;
 	/* min-width: 620px; */
-	height: 9%;
+	height: 11%;
 	background-color: #282828d6;
 	-moz-border-radius: 25px 10px / 10px 25px;
 	-moz-border-radius: 30px;
@@ -110,12 +110,12 @@
 	border-radius: 2px;
 }
 .playbackBar .progressBar {
-	margin-top: 11%;
+	margin-top: 14%;
 }
 
 #nowPlayingLeft .albumArtwork {
-	height: 215%;
-	width: 45%;
+	height: 166%;
+	width: 42%;
 	/* max-width: 57px; */
 	margin-right: 15px;
 	float: left;
