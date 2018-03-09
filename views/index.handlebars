@@ -8,50 +8,50 @@
     <link rel="stylesheet" type="text/css" href="/css/nowPlayingBarIndex.css">
 
 
-<style type="text/css">
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    .slider {
-        width: 85%;
-        margin-top: 4%;
-    }
-    .slick-slide {
-      margin: 0px 20px;
-    }
-    .slick-slide img {
-      width: 100%;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-      color: white;
-    }
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
-    .slick-active {
-      opacity: .5;
-    }
-    .slick-current {
-      opacity: 1;
-    }
-  </style>
+    <style type="text/css">
+        html, body {
+          margin: 0;
+          padding: 0;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        .slider {
+            width: 85%;
+            margin-top: 4%;
+        }
+        .slick-slide {
+          margin: 0px 20px;
+        }
+        .slick-slide img {
+          width: 100%;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          color: white;
+        }
+        .slick-slide {
+          transition: all ease-in-out .3s;
+          opacity: .2;
+        }
+        
+        .slick-active {
+          opacity: .5;
+        }
+        .slick-current {
+          opacity: 1;
+        }
+      </style>
 </head>
 
 
 <body>
 
 <!--HAMBURGER MENU-->  
-    <div class="wrapper">
+<div class="wrapper">
         <div class="nav" id="nav">
             <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-            <a href="/index">Home</a>
+            <a id="homeTab" href="/index">Home</a>
             <a href="search">Search</a>
             <a href="partyMode">Party Mode!</a>
             <a href="profile">Profile</a>
@@ -59,149 +59,144 @@
         <span onclick="openNav()" class="open" id="open">&#9776</span>
 
 
-<center>
-        <h1>Playlists</h1>
+  <center>
+          <h1>Playlists</h1>
 
-        <div class="accounts">
-        <a href="javascript:void(0)" class="btn_apple">Apple</a>
-          <section class="regular slider apple">
-            <div>
-              <a href="currents"> <img src="/images/444.png"></a>
-            </div>
-            <div>
-              <img src="/images/acidRap.jpg">
-            </div>
-            <div>
-              <img src="/images/b4rodeo.jpg">
-            </div>
-            <div>
-              <img src="/images/blackPanther.jpg">
-            </div>
-            <div>
-              <img src="/images/dropoutYe.jpg">
-            </div>
-            <div>
-              <img src="/images/flowerBoy.jpeg">
-            </div>
-            <div>
-              <img src="/images/freud.jpeg">
-            </div>
-            <div>
-              <img src="/images/jayRock.jpg">
-            </div>
-            <div>
-              <img src="/images/jayZ.jpg">
-            </div>
-          </section>
-        </div>
+          <div class="accounts">
+          <a href="javascript:void(0)" class="btn_apple">Apple</a>
+            <section class="regular slider apple">
+              <div>
+                <a href="currents"> <img src="/images/444.png"></a>
+              </div>
+              <div>
+                <img src="/images/acidRap.jpg">
+              </div>
+              <div>
+                <img src="/images/b4rodeo.jpg">
+              </div>
+              <div>
+                <img src="/images/blackPanther.jpg">
+              </div>
+              <div>
+                <img src="/images/dropoutYe.jpg">
+              </div>
+              <div>
+                <img src="/images/flowerBoy.jpeg">
+              </div>
+              <div>
+                <img src="/images/freud.jpeg">
+              </div>
+              <div>
+                <img src="/images/jayRock.jpg">
+              </div>
+              <div>
+                <img src="/images/jayZ.jpg">
+              </div>
+            </section>
+          </div>
 
-        <div class="accounts">
-        <a href="javascript:void(0)" class="btn_spotify">Spotify</a>
-          <section class="slider spotify">
-            <div>
-              <img src="/images/kaytra.jpg">
-            </div>
-            <div>
-              <img src="/images/kdot.jpg">
-            </div>
-            <div>
-              <img src="/images/kehlani.jpg">
-            </div>
-            <div>
-              <img src="/images/khalid.jpg">
-            </div>
-            <div>
-              <img src="/images/moreLife.jpg">
-            </div>
-            <div>
-              <img src="/images/mrRager.jpg">
-            </div>
-          </section>
-        </div>
+          <div class="accounts">
+          <a href="javascript:void(0)" class="btn_spotify">Spotify</a>
+            <section class="slider spotify">
+              <div>
+                <img src="/images/kaytra.jpg">
+              </div>
+              <div>
+                <img src="/images/kdot.jpg">
+              </div>
+              <div>
+                <img src="/images/kehlani.jpg">
+              </div>
+              <div>
+                <img src="/images/khalid.jpg">
+              </div>
+              <div>
+                <img src="/images/moreLife.jpg">
+              </div>
+              <div>
+                <img src="/images/mrRager.jpg">
+              </div>
+            </section>
+          </div>
 
-        <div class="accounts">
-        <a href="javascript:void(0)" class="btn_tidal">Tidal</a>
-          <section class="slider tidal">
-            <div>
-                <a id="oozRand" onclick="randOoz()"><img src="/images/ooz.jpg"></a>
-            </div>
-            <div>
-              <img src="/images/orange.jpg">
-            </div>
-            <div>
-              <img src="/images/YeGrad.jpg">
-            </div>
-            <div>
-              <img src="/images/oxymoron.jpg">
-            </div>
-          </section>
-        </div>
-</center>
+          <div class="accounts">
+          <a href="javascript:void(0)" class="btn_tidal">Tidal</a>
+            <section class="slider tidal">
+              <div>
+                  <a id="oozRand" onclick="randOoz()"><img src="/images/ooz.jpg"></a>
+              </div>
+              <div>
+                <img src="/images/orange.jpg">
+              </div>
+              <div>
+                <img src="/images/YeGrad.jpg">
+              </div>
+              <div>
+                <img src="/images/oxymoron.jpg">
+              </div>
+            </section>
+          </div>
+  </center>
 
-          <!-- NowPlayingBar -->
-  <div id="nowPlayingBarContainer">
+            <!-- NowPlayingBar -->
+    <div id="nowPlayingBarContainer">
 
-    <div id="nowPlayingBar">
+      <div id="nowPlayingBar">
 
-      <div id="nowPlayingLeft">
-        <div class="content">
-          <span class="albumLink">
-            <img id="image" class="albumArtwork" src="/images/acidRap.jpg">
-          </span>
-
-          <div class="trackInfo">
-            
-            <span class="trackName">
-              <span><h3 id="songTitle">Cocoa Butter Kisses</h3></span>
+        <div id="nowPlayingLeft">
+          <div class="content">
+            <span class="albumLink">
+              <img id="image" class="albumArtwork" src="/images/acidRap.jpg">
             </span>
 
-            <span class="artistName">
-              <span><h3 id="artistName">Chance The Rapper</h3></span>
-            </span>
+            <div class="trackInfo">
+              
+              <span class="trackName">
+                <span><h3 id="songTitle">Cocoa Butter Kisses</h3></span>
+              </span>
+
+              <span class="artistName">
+                <span><h3 id="artistName">Chance The Rapper</h3></span>
+              </span>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="nowPlayingCenter">
+          <div class="content playerControls">
+            <div class="buttons">
+
+              <button id="pre" onclick="pre()" class="controlButton play" title="Play button">
+                <img src="/icons/previous.png">
+              </button>
+
+              <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
+                <img src="/icons/pause.png">
+              </button>
+
+              <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
+                <img src="/icons/next.png">
+              </button>
+
+            </div>
+
+            <div class="playbackBar">
+              <span class="progressTime current">0.00</span>
+              <div class="progressBar">
+                  <div id="fill" class="progressBarBg"></div>
+              </div>
+              <span class="progressTime remaining">4.02</span>
+            </div> 
+
 
           </div>
         </div>
+
       </div>
-<!--
-      <audio id="myAudio"> 
-        <source src="/songs/bleach7.mp3" type="audio/mpeg">
-      </audio>
--->
 
-      <div id="nowPlayingCenter">
-        <div class="content playerControls">
-          <div class="buttons">
-
-            <button id="pre" onclick="pre()" class="controlButton play" title="Play button">
-              <img src="/icons/previous.png">
-            </button>
-
-            <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
-              <img src="/icons/pause.png">
-            </button>
-
-            <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
-              <img src="/icons/next.png">
-            </button>
-
-          </div>
-
-          <div class="playbackBar">
-            <span class="progressTime current">0.00</span>
-            <div class="progressBar">
-                <div id="fill" class="progressBarBg"></div>
-            </div>
-            <span class="progressTime remaining">4.02</span>
-          </div> 
-
-
-        </div>
-      </div>
 
     </div>
-
-
-  </div>
 
        
 </div>

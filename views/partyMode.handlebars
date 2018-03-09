@@ -113,6 +113,9 @@ ga('send', 'pageview');
 #sendRequest, #requestQueue {
   background: linear-gradient(to right, #31C3DF, #37B081);
 }
+#partyTab {
+  background-color: #4020204a;
+}
 </style>
 
 <!--HAMBURGER MENU-->  
@@ -121,7 +124,7 @@ ga('send', 'pageview');
             <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
             <a href="/index">Home</a>
             <a href="search">Search</a>
-            <a href="partyMode">Party Mode!</a>
+            <a id="partyTab" href="partyMode">Party Mode!</a>
             <a href="profile">Profile</a>
         </div>
         <span onclick="openNav()" class="open" id="open">&#9776</span>
