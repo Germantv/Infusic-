@@ -20,7 +20,7 @@ button {
     background: linear-gradient(to right, #31C3DF, #37B081);
     color: white;
     padding: 14px 20px;
-    margin: 20px 0;
+    margin: 20px 0 20px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -114,4 +114,9 @@ hr {
     content: "";
     clear: both;
     display: table;
+}
+
+#icon {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
