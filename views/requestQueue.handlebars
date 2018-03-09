@@ -13,28 +13,83 @@
 			<link href="/css/bootstrap-theme.css" rel="stylesheet">
 			<link href="/css/requestQueue_styling.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/*HAMBURGER MENU*/
+.open {
+    color: white;
+    font-size: 40px;
+    float: left;
+    padding-left: 1em;
+    padding-top: 1em;
+    cursor: pointer;
+    display: block;
+}
+.open:hover {
+    opacity: 0.8;
+}
+
+.nav {
+    height: 120vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(to right, #31C3DF, #37B081);
+    transition: 0.5s;
+    display: block;
+    overflow-x: hidden;
+    margin-top: -50px;
+    opacity: 0.93;
+}
+.nav a {
+    clear: left;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 50px;
+    transition: 0.3s;
+    padding: 0.5em;
+}
+
+.nav a:not(:first-child):hover {
+    background-color: #1272b7;
+}
+.close {
+    float: left;
+    font-size: 30px;
+    margin: 1em 0 0 1em;
+    opacity: 1;
+}
+
+#sendRequest, #requestQueue {
+  background: linear-gradient(to right, #31C3DF, #37B081);
+}
+#partyTab {
+  background-color: #4020204a;
+}
+</style>
 	</head>
 
 	<body>
-<!--		<center>
-		<h1 id="emptyQueue">Queue is Empty</h1>
-		</center>
--->
 
-		<center>
+
+<!--HAMBURGER MENU-->  
+ <div class="wrapper">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="/index">Home</a>
+            <a href="search">Search</a>
+            <a id="partyTab" href="partyMode">Party Mode!</a>
+            <a href="profile">Profile</a>
+        </div>
+        <span onclick="openNav()" class="open" id="open">&#9776</span>
+
+
 			<img src="/icons/requestqueue_title.png" id="requestqueue_title">
 
-			<div id="songBar1">
+			<div id="songBar1" style="margin-bottom: 30px;">
 				<b id="s1">"One Dance (feat. Wizkid & Kyla)"</b>
 				<i><p id="a1">Drake</p></i>
-				<button class="queueButton" id="approveButton1">✓</button>
-				<script type="text/javascript">
-					document.getElementById("approveButton1").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar1");
-						rmSong.style.display="none";
-						alert("Approved: One Dance (feat. Wizkid & Kyla)")
-					});
-				</script>
 				<button class="queueButton" id="denyButton1">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton1").addEventListener("click", function() {
@@ -43,18 +98,20 @@
 						alert("Denied: One Dance (feat. Wizkid & Kyla)");
 					});
 				</script>
-			</div>
-			<div id="songBar2">
-				<b id="s2">Antidote</b>
-				<i><p id="a2">Travi$ Scott</p></i>
-				<button class="queueButton" id="approveButton2">✓</button>
+				<button class="queueButton" id="approveButton1"" >✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton2").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar2");
+					document.getElementById("approveButton1").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar1");
 						rmSong.style.display="none";
-						alert("Approved: Antidote");
+						alert("Approved: One Dance (feat. Wizkid & Kyla)")
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar2" style="margin-bottom: 30px;">
+				<b id="s2">Antidote</b>
+				<i><p id="a2">Travi$ Scott</p></i>
 				<button class="queueButton" id="denyButton2">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton2").addEventListener("click", function() {
@@ -63,18 +120,20 @@
 						alert("Denied: Antidote");
 					});
 				</script>
-			</div>
-			<div id="songBar3">
-				<b id="s3">Get Lucky (feat. Pharrell Williams)</b>
-				<i><p id="a3">Daft Punk</p></i>
-				<button class="queueButton" id="approveButton3">✓</button>
+				<button class="queueButton" id="approveButton2">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton3").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar3");
+					document.getElementById("approveButton2").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar2");
 						rmSong.style.display="none";
-						alert("Approved: Get Lucky (feat. Pharrell Williams)");
+						alert("Approved: Antidote");
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar3" style="margin-bottom: 30px;">
+				<b id="s3">Get Lucky (feat. Pharrell Williams)</b>
+				<i><p id="a3">Daft Punk</p></i>
 				<button class="queueButton" id="denyButton3">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton3").addEventListener("click", function() {
@@ -83,18 +142,20 @@
 						alert("Denied: Get Lucky (feat. Pharrell Williams)");
 					});
 				</script>
-			</div>
-			<div id="songBar4">
-				<b id="s4">Hard in da Paint (prod. by Lex Luger)</b>
-				<i><p id="a4">Waka Flocka Flame</p></i>
-				<button class="queueButton" id="approveButton4">✓</button>
+				<button class="queueButton" id="approveButton3">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton4").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar4");
+					document.getElementById("approveButton3").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar3");
 						rmSong.style.display="none";
-						alert("Approved: Hard in da Paint (prod. by Lex Luger)");
+						alert("Approved: Get Lucky (feat. Pharrell Williams)");
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar4" style="margin-bottom: 30px;">
+				<b id="s4">Hard in da Paint (prod. by Lex Luger)</b>
+				<i><p id="a4">Waka Flocka Flame</p></i>
 				<button class="queueButton" id="denyButton4">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton4").addEventListener("click", function() {
@@ -103,18 +164,20 @@
 						alert("Denied: Hard in da Paint (prod. by Lex Luger)");
 					});
 				</script>
-			</div>			
-			<div id="songBar5">
-				<b id="s5">Danny Glover</b>
-				<i><p id="a5">Young Thug</p></i>
-				<button class="queueButton" id="approveButton5">✓</button>
+				<button class="queueButton" id="approveButton4">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton5").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar5");
+					document.getElementById("approveButton4").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar4");
 						rmSong.style.display="none";
-						alert("Approved: Danny Glover");
+						alert("Approved: Hard in da Paint (prod. by Lex Luger)");
 					});
 				</script>
+			</div>			
+
+
+			<div id="songBar5" style="margin-bottom: 30px;">
+				<b id="s5">Danny Glover</b>
+				<i><p id="a5">Young Thug</p></i>
 				<button class="queueButton" id="denyButton5">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton5").addEventListener("click", function() {
@@ -123,18 +186,20 @@
 						alert("Denied: Danny Glover");
 					});
 				</script>
-			</div>			
-			<div id="songBar6">
-				<b id="s6">Feeling Myself (feat. Beyonce)</b>
-				<i><p id="a6">Nicki Minaj</p></i>
-				<button class="queueButton" id="approveButton6">✓</button>
+				<button class="queueButton" id="approveButton5">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton6").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar6");
+					document.getElementById("approveButton5").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar5");
 						rmSong.style.display="none";
-						alert("Approved: Feeling Myself (feat. Beyonce)");
+						alert("Approved: Danny Glover");
 					});
 				</script>
+			</div>			
+
+
+			<div id="songBar6" style="margin-bottom: 30px;">
+				<b id="s6">Feeling Myself (feat. Beyonce)</b>
+				<i><p id="a6">Nicki Minaj</p></i>
 				<button class="queueButton" id="denyButton6">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton6").addEventListener("click", function() {
@@ -143,18 +208,20 @@
 						alert("Denied: Feeling Myself (feat. Beyonce)");
 					});
 				</script>
-			</div>
-			<div id="songBar7">
-				<b id="s7">Stay Fly</b>
-				<i><p id="a7">Three 6 Mafia</p></i>
-				<button class="queueButton" id="approveButton7">✓</button>
+				<button class="queueButton" id="approveButton6">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton7").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar7");
+					document.getElementById("approveButton6").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar6");
 						rmSong.style.display="none";
-						alert("Approved: Stay Fly");
+						alert("Approved: Feeling Myself (feat. Beyonce)");
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar7" style="margin-bottom: 30px;">
+				<b id="s7">Stay Fly</b>
+				<i><p id="a7">Three 6 Mafia</p></i>
 				<button class="queueButton" id="denyButton7">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton7").addEventListener("click", function() {
@@ -163,18 +230,20 @@
 						alert("Denied: Stay Fly");
 					});
 				</script>
-			</div>			
-			<div id="songBar8">
-				<b id="s8">Chamber of Reflection</b>
-				<i><p id="a8">Mac DeMarco</p></i>
-				<button class="queueButton" id="approveButton8">✓</button>
+				<button class="queueButton" id="approveButton7">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton8").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar8");
+					document.getElementById("approveButton7").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar7");
 						rmSong.style.display="none";
-						alert("Approved: Chamber of Reflection");
+						alert("Approved: Stay Fly");
 					});
 				</script>
+			</div>			
+
+
+			<div id="songBar8" style="margin-bottom: 30px;">
+				<b id="s8">Chamber of Reflection</b>
+				<i><p id="a8">Mac DeMarco</p></i>
 				<button class="queueButton" id="denyButton8">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton8").addEventListener("click", function() {
@@ -183,18 +252,20 @@
 						alert("Denied: Chamber of Reflection");
 					});
 				</script>
-			</div>
-			<div id="songBar9">
-				<b id="s9">My Love (feat. T.I. & Timbaland)</b>
-				<i><p id="a9">Justin Timberlake</p></i>
-				<button class="queueButton" id="approveButton9">✓</button>
+				<button class="queueButton" id="approveButton8">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton9").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar9");
+					document.getElementById("approveButton8").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar8");
 						rmSong.style.display="none";
-						alert("Approved: My Love (feat. T.I. & Timbaland)");
+						alert("Approved: Chamber of Reflection");
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar9" style="margin-bottom: 30px;">
+				<b id="s9">My Love (feat. T.I. & Timbaland)</b>
+				<i><p id="a9">Justin Timberlake</p></i>
 				<button class="queueButton" id="denyButton9">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton9").addEventListener("click", function() {
@@ -203,18 +274,20 @@
 						alert("Denied: My Love (feat. T.I. & Timbaland)");
 					});
 				</script>
-			</div>
-			<div id="songBar10">
-				<b id="s10">CHERRY BOMB</b>
-				<i><p id="a10">Tyler, the Creator</p></i>
-				<button class="queueButton" id="approveButton10">✓</button>
+				<button class="queueButton" id="approveButton9">✓</button>
 				<script type="text/javascript">
-					document.getElementById("approveButton10").addEventListener("click", function() {
-						var rmSong = document.getElementById("songBar10");
+					document.getElementById("approveButton9").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar9");
 						rmSong.style.display="none";
-						alert("Approved: CHERRY BOMB");
+						alert("Approved: My Love (feat. T.I. & Timbaland)");
 					});
 				</script>
+			</div>
+
+
+			<div id="songBar10" style="margin-bottom: 30px;">
+				<b id="s10">CHERRY BOMB</b>
+				<i><p id="a10">Tyler, the Creator</p></i>
 				<button class="queueButton" id="denyButton10">X</button>
 				<script type="text/javascript">
 					document.getElementById("denyButton10").addEventListener("click", function() {
@@ -223,7 +296,17 @@
 						alert("Denied: CHERRY BOMB");
 					});
 				</script>
+				<button class="queueButton" id="approveButton10">✓</button>
+				<script type="text/javascript">
+					document.getElementById("approveButton10").addEventListener("click", function() {
+						var rmSong = document.getElementById("songBar10");
+						rmSong.style.display="none";
+						alert("Approved: CHERRY BOMB");
+					});
+				</script>
 			</div>	
+
+			<!--
 			<div id="songBar11">
 				<b id="s11">Guillotine</b>
 				<i><p id="a11">Death Grips</p></i>
@@ -365,7 +448,7 @@
 				</script>
 			</div>	
 		</center>
-
+-->
 <!--		{{#each songNames}}
 			<center>
 			<div class="songName">
@@ -487,7 +570,18 @@
 
 
 <!--		<script>startQueue();</script> -->
-
+	</body>
+    <script>
+        function openNav() {
+            document.getElementById("open").style.display = "none";
+            document.getElementById("nav").style.width = "100%";
+        }
+        function closeNav() {
+            
+            document.getElementById("nav").style.width = "0";
+            document.getElementById("open").style.display = "block";
+        }
+      </script>
 
 <!-- Google Analytics -->
 <script>
@@ -501,15 +595,7 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 
-	</body>
 
-	<div class="navbar">
-		<a href="/index"><i class="fa fa-home"></i></a> 
-		<a href="search"><i class="fa fa-search"></i></a>
-		<a class="active" href="partyMode"><i class="fa fa-users"></i></a>
-		<a href="profile"><i class="fa fa-user"></i></a>
-	</div>
- 
 
 <script src="/js/jquery-1.11.0.js"></script>
 <script src="/js/bootstrap.js"></script>

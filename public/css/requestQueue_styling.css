@@ -1,5 +1,6 @@
 body {
     overflow: scroll;
+    background: #181820;
 }
 
 #queue {
@@ -14,8 +15,10 @@ body {
     border-radius: 0%;
     width: auto;
     height: auto;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
+    margin-right: 55px;
+    margin-bottom: 30px;
 }
 
 #songbar1, #songbar2, #songbar3, #songbar4,
@@ -32,12 +35,14 @@ body {
 #approveButton12, #approveButton13, #approveButton14, #approveButton15,
 #approveButton16, #approveButton17 {
    /* background: url(../icons/plus.png);*/
-   background-color: green;
+   display: inline-block;
+   background: linear-gradient(to right, #31C3DF, #37B081);
    color: white;
    font-size: 400%;
-   width: 10%;
-   height: 10%;
+   width: 100px;
+   height: 100px;
    border-radius: 50%;
+   margin-left: 20px;
 }
 
 #denyButton1, #denyButton2, #denyButton3, #denyButton4,
@@ -46,12 +51,14 @@ body {
 #denyButton12, #denyButton13, #denyButton14, #denyButton15,
 #denyButton16, #denyButton17 {
    /* background: url(../icons/x.png);*/
-   background-color: red;
+   display: inline-block;
+   background: linear-gradient(to right, #DF0B0B, #FF7B26);
    color: white;
    font-size: 400%;
-   width: 10%;
-   height: 10%;
+   width: 100px;
+   height: 100px;
    border-radius: 50%;
+   margin-right: 20px;
 }
 
 #emptyQueue {
@@ -61,16 +68,15 @@ body {
 }
 
 b, strong {
-    font-weight: bold;
     size: 20;
     text-size-adjust: 100px;
     font-size: 30;
-    color: springgreen;
+    color: white;
 }
 p {
     margin: 0 0 10px;
     font-size: 30;
-    color: springgreen;
+    color: white;
 }
 
 input, button, select, textarea {
