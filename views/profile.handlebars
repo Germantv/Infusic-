@@ -108,63 +108,58 @@
       <a button class="logoutButton" href="login" id="signOut">Sign Out</button></a>    
     </center>
           <!-- NowPlayingBar -->
-<div id="nowPlayingBarContainer">
+    <div id="nowPlayingBarContainer">
 
-      <div id="nowPlayingBar">
+          <div id="nowPlayingBar">
 
-        <div id="nowPlayingLeft">
-          <div class="content">
-            <span class="albumLink">
-              <img id="image" class="albumArtwork" src="/images/acidRap.jpg">
-            </span>
+            <div id="nowPlayingLeft">
+              <div class="content">
+                <span class="albumLink">
+                  <img id="image" class="albumArtwork" src="/images/acidRap.jpg">
+                </span>
 
-            <div class="trackInfo">
-              
-              <span class="trackName">
-                <span><h4 id="songTitle">Cocoa Butter Kisses</h4></span>
-              </span>
+                <div class="trackInfo">
+                  
+                  <span class="trackName">
+                    <span><h4 id="songTitle">Cocoa Butter Kisses</h4></span>
+                  </span>
 
-              <span class="artistName">
-                <span><h4 id="artistName">Chance The Rapper</h4></span>
-              </span>
+                  <span class="artistName">
+                    <span><h4 id="artistName">Chance The Rapper</h4></span>
+                  </span>
 
-            </div>
-          </div>
-        </div>
-
-        <div id="nowPlayingCenter">
-          <div class="content playerControls">
-            <div class="buttons">
-
-              <button id="pre" onclick="pre()" class="controlButton play" title="Play button">
-                <img src="/icons/previous.png">
-              </button>
-
-              <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
-                <img src="/icons/pause.png">
-              </button>
-
-              <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
-                <img src="/icons/next.png">
-              </button>
-
-            </div>
-
-            <div class="playbackBar">
-              <span class="progressTime current">0.00</span>
-              <div class="progressBar">
-                  <div id="fill" class="progressBarBg"></div>
+                </div>
               </div>
-              <span class="progressTime remaining">4.02</span>
-            </div> 
+            </div>
 
+            <div id="nowPlayingCenter">
+              <div class="content playerControls">
+                <div class="buttons">
 
+                  <button id="pre" onclick="pre()" class="controlButton play" title="Play button">
+                    <img src="/icons/previous.png">
+                  </button>
+
+                  <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
+                    <img src="/icons/pause.png">
+                  </button>
+
+                  <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
+                    <img src="/icons/next.png">
+                  </button>
+
+                </div>
+
+                <div class="playbackBar">
+                  <span class="progressTime current">0.00</span>
+                  <div class="progressBar">
+                      <div id="fill" class="progressBarBg"></div>
+                  </div>
+                  <span class="progressTime remaining">4.02</span>
+                </div> 
+              </div>
+            </div>
           </div>
-        </div>
-
-      </div>
-
-
     </div>
 </div>
 
