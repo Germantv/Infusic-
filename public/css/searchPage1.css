@@ -6,12 +6,11 @@
  
 body {
 	overflow: scroll;
-	padding-bottom: 70px;
-	font-size: 20px;
-	text-align: center;
-	min-width: 720px;
-	background-color:  #181820;
-	/* background-image: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg); */
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: center;
+    min-width: 720px;
+    background-image: linear-gradient(rgba(29,145,214,0.7),rgba(234,20,254,0.2)), url(../images/colorWave.jpg);
 }
  
 #container {
@@ -76,17 +75,16 @@ header p {
 img {
 	width: 233px;
 	height: 250px;
-	border-radius: 25%;
+	border-radius: 50%;
 }
  
 /*keyframe animations*/
 .first {
 	-webkit-animation: bannermove 30s linear infinite;
-	-moz-animation: bannermove 30s linear infinite;
-	-ms-animation: bannermove 30s linear infinite;
-	-o-animation: bannermove 30s linear infinite;
-	animation: bannermove 30s linear infinite;
-	margin-right: 2vh;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
 }
  
 @keyframes "bannermove" {
@@ -152,7 +150,7 @@ img {
 	-o-transition: all 0.8s ease;
 	-ms-transition: all 0.8s ease;
 	transition: all 0.8s ease;
-	margin-right: 2.3vh;
+
 }
  
 .photobanner img:hover {
