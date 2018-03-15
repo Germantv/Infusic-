@@ -174,7 +174,7 @@
                   </button>
 
                   <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
-                    <img src="/icons/pause.png">
+                    <img src="/icons/play.png">
                   </button>
 
                   <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
@@ -225,7 +225,7 @@
         var song = new Audio();
         var currentSong = 0;    // it point to the current song
         
-        window.onload = playSong;   // it will call the function playSong when window is load
+        //window.onload = playSong;   // it will call the function playSong when window is load
         
         function playSong(){
             
@@ -240,7 +240,7 @@
         function playOrPauseSong(){
             
             if(song.paused){
-                song.play();
+                playSong();
                 $("#play img").attr("src","/icons/pause.png");
             }
             else{
