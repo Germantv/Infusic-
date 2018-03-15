@@ -139,8 +139,13 @@ h1 {
   background-color: #4020204a;
 }
 
-
-
+#playlists_icon {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    display: block;
+    margin-left: 36%;
+    margin-right: auto;
+}
 
 /* -------------CSS FOR IMAGE GRID -------------- 
 .xop-section {
