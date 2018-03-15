@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/css/styling.css" rel="stylesheet">
   <link href="/css/searchPage.css" rel="stylesheet">
+  <link href="/css/nowPlayingBarProfile.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="/css/nowPlayingBarStyle.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -23,8 +23,8 @@
     color: white;
     font-size: 40px;
     float: left;
-    padding-left: 1em;
-    padding-top: 1em;
+    padding-left: 2em;
+    padding-top: 6em;
     cursor: pointer;
     display: block;
 }
@@ -41,7 +41,7 @@
     transition: 0.5s;
     display: block;
     overflow-x: hidden;
-    margin-top: -50px;
+    margin-top: 17%;
     opacity: 0.93;
 }
 .nav a {
@@ -90,121 +90,139 @@
   </div>
 
 
-   <!-- NowPlayingBar -->
-  <div id="nowPlayingBarContainer">
+ <!-- NowPlayingBar -->
+    <div id="nowPlayingBarContainer">
 
-    <div id="nowPlayingBar">
+      <div id="nowPlayingBar">
 
-      <div id="nowPlayingLeft">
-        <div class="content">
-          <span class="albumLink">
-            <img class="albumArtwork" src="http://images.pigeonsandplanes.com/images/c_limit,f_auto,fl_lossy,q_auto,w_1030/xbexk1mqjahpn3hd4ihz/brockhampton-saturation-3">
-          </span>
-
-          <div class="trackInfo">
-            
-            <span class="trackName">
-              <span>BLEACH</span>
+        <div id="nowPlayingLeft">
+          <div class="content">
+            <span class="albumLink">
+              <img id="image" class="albumArtwork" src="/images/acidRap.jpg">
             </span>
 
-            <span class="artistName">
-              <span>Brockhampton</span>
-            </span>
+            <div class="trackInfo">
+              
+              <span class="trackName">
+                <span><h4 id="songTitle">Cocoa Butter Kisses</h4></span>
+              </span>
 
-          </div>
-        </div>
-      </div>
+              <span class="artistName">
+                <span><h4 id="artistName">Chance The Rapper</h4></span>
+              </span>
 
-
-      <audio id="myAudio"> 
-        <source src="/songs/bleach7.mp3" type="audio/mpeg">
-      </audio>
-
-      <div id="nowPlayingCenter">
-        <div class="content playerControls">
-          <div class="buttons">
-
-            <button onclick="playAudio();moveBar();" class="controlButton play" title="Play button">
-              <img src="/icons/play.png">
-            </button>
-
-            <button onclick="pauseAudio()" class="controlButton pause" title="Pause button">
-              <img src="/icons/pause.png">
-            </button>
-
-            <button onclick="goNext()" class="controlButton forward" title="Forward button" alt="Forward Button">
-              <img src="/icons/next.png">
-            </button>
-
-          </div>
-
-          <div class="playbackBar">
-            <span class="progressTime current">0.00</span>
-            <div class="progressBar">
-                <div class="progressBarBg">
-                  <div id="myBar"></div>
-                </div>
             </div>
-            <span class="progressTime remaining">2.49</span>
-          </div> 
+          </div>
+        </div>
+
+        <div id="nowPlayingCenter">
+          <div class="content playerControls">
+            <div class="buttons">
+
+              <button id="pre" onclick="pre()" class="controlButton play" title="Play button">
+                <img src="/icons/previous.png">
+              </button>
+
+              <button onclick="playOrPauseSong()" id="play" class="controlButton pause" title="Pause button">
+                <img src="/icons/play.png">
+              </button>
+
+              <button onclick="next()" id="next" class="controlButton forward" title="Forward button" alt="Forward Button">
+                <img src="/icons/next.png">
+              </button>
+
+            </div>
+
+            <div class="playbackBar">
+              <span class="progressTime current">0.00</span>
+              <div class="progressBar">
+                  <div id="fill" class="progressBarBg"></div>
+              </div>
+              <span class="progressTime remaining">4.02</span>
+            </div> 
+          </div>
         </div>
       </div>
-
     </div>
-
 
   </div>
 
-  <script>
-    var playlist = ['/songs/chance1.mp3', '/songs/jayz2.mp3', '/songs/kdot3.mp3', '/songs/panther4.mp3', '/songs/rodeo5.mp3', '/songs/tyler5.mp3', '/songs/ye6.mp3', '/songs/bleach7.mp3'];
 
-
-    var x = document.getElementById("myAudio");
-    var n;
-    var i = 0;
-
-    function playAudio() {
-      x.play();
-      n = 1;
-    }
-    function pauseAudio() {
-      x.pause();
-      n = 2;
-    }
-
-    function goNext() {
-      i++;
-      if(i < playlist.length){
-        console.log(playlist[i]);
-        x.src = playlist[i];
-        x.play();
-      }
-      else {
-        i = 0;
-        ++i;
-        x.src = playlist[i];
-        x.play();
-      }
-    }
-
-    function moveBar(){
-      var elem = document.getElementById("myBar");
-      var width = 0.01;
-      var id = setInterval(frame, 500);
-      function frame() {
-        if(n==2) {
-          clearInterval(id);
+  <script type="text/javascript">
+    
+        var songs = ['songs/chance1.mp3', '/songs/jayz2.mp3', '/songs/kdot3.mp3', '/songs/panther4.mp3', '/songs/rodeo5.mp3', '/songs/tyler5.mp3', '/songs/ye6.mp3', '/songs/biscuit.mp3'];
+        var songNames = ["Cocoa Butter Kisses", "The Story of OJ", "Backseat Freestyle", "Pray For Me", "Drugs you Should Try", "911/Mr. Lonely", "Jesus Walks", "Biscuit Town"];
+        var artistNames = ["Chance the Rapper", "Jay Z", "Kendrick Lamar", "Kendrick Lamar", "Travis Scott", "Tyler the Creator", "Kanye West", "King Krule"];
+        var poster = ["/images/acidRap.jpg","images/444.png","/images/kdot.jpg", "/images/blackPanther.jpg", "/images/b4rodeo.jpg", "/images/flowerBoy.jpeg", "/images/dropoutYe.jpg", "/images/ooz.jpg"];
+        
+        var songTitle = document.getElementById("songTitle");
+        var artistName = document.getElementById("artistName");
+        var albumImage = document.getElementById("image");
+        var fillBar = document.getElementById("fill");
+        
+        var song = new Audio();
+        var currentSong = 0;    // it point to the current song
+        
+        //window.onload = playSong;   // it will call the function playSong when window is load
+        
+        function playSong(){
+            
+            song.src = songs[currentSong];  //set the source of 0th song 
+            
+            songTitle.textContent = songNames[currentSong]; // set the title of song
+            artistName.textContent = artistNames[currentSong];
+            albumImage.src = poster[currentSong];
+            song.play();    // play the song
         }
-        else {
-          width++;
-          elem.style.width = width + 'px';
+        
+        function playOrPauseSong(){
+            
+            if(song.paused){
+                playSong();
+                $("#play img").attr("src","/icons/pause.png");
+            }
+            else{
+                song.pause();
+                $("#play img").attr("src","/icons/play.png");
+            }
         }
-      }
-    }
+        
+        song.addEventListener('timeupdate',function(){ 
+            
+            var position = song.currentTime / song.duration;
+            
+            fillBar.style.width = position * 100 +'%';
+            fillBar.style.color = "blue";
+        });
+        
+    
+        function next(){
+            
+            currentSong++;
+            if(currentSong >= songs.length){
+                currentSong = 0;
+            }
+            playSong();
+            $("#play img").attr("src","/icons/pause.png");
+            $("#image img").attr("src",poster[currentSong]);
+            //$("#bg img").attr("src",poster[currentSong]);
+        }
+    
+        function pre(){
+            
+            currentSong--;
+            if(currentSong < 0){
+                currentSong = songs.length-1;
+            }
+
+            playSong();
+            $("#play img").attr("src","/icons/pause.png");
+            $("#image img").attr("src",poster[currentSong]);
+            //$("#bg img").attr("src",poster[currentSong]);
+        }
+    
+    
   </script>
-
-
-  <a href="https://icons8.com">Icon pack by Icons8</a>
 
   <!-- Google Analytics -->
 <script>
