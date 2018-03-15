@@ -10,30 +10,31 @@
 
 <form action="index">
   <div class="imgcontainer">
-    <img src="/icons/infusic_white.png" id="icon" width=150px>
+    <img src="/icons/infusic_white.png" id="icon" width=300px>
   </div>
 
-<center>
+
   <div class="container" id="loginStuff">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="whatspoppinjimbo" required>
+    <h2>Username</h2>
+    <input type="text" placeholder="whatspoppinjimbo" required id="input1">
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="**********" required>
+    <h2>Password</h2>
+    <input type="password" placeholder="**********" required id="input2">
     <a href="index">
-        <button type="submit">Login</button>
+        <button type="submit" id="login">Login</button>
     </a>
-
+    <center>
         <div class="facebook">
-            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState(); style=" id="fblog"></fb:login-button>
         </div>
+      </center>
 </center>
 </div>
 </form>
 
 <!--Sign Up Form-->
 <center>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="signUp">Don't have an account? Sign Up</button>
 </center>
 
 <div id="id01" class="modal">
@@ -43,14 +44,14 @@
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="whatspoppinjimbo@gmail.com" name="email" required>
+      <label for="email"><h3>Email</h3></label>
+      <input type="text" placeholder="whatspoppinjimbo@gmail.com" name="email" required id="input3">
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="*********" name="psw" required>
+      <label for="psw"><h3>Password</h3></label>
+      <input type="password" placeholder="*********" name="psw" required id="input4">
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="*********" name="psw-repeat" required>
+      <label for="psw-repeat"><h3>Repeat Password</h3></label>
+      <input type="password" placeholder="*********" name="psw-repeat" required id="input5">
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
